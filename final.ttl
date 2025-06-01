@@ -1,0 +1,422 @@
+@base <http://www.example.org/strart#> .
+@prefix crm: <https://www.cidoc-crm.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix strart: <http://www.example.org/strart#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<item/work1> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/ANDRECO"^^xsd:string ;
+    schema:dateCreated "2012"^^xsd:gYear ;
+    crm:P102_has_title <title/work1> ;
+    crm:P129_is_about "subject/nature "^^xsd:string ;
+    crm:P138_represents <theme/environment> ;
+    crm:P1_is_identified_by <identifier/work1> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "The work represents a large tree, inspired by the Philosophical Tree of the Alchemists of the fourteenth century. A large egg and a crystal also appear in the painting, symbols representing the transition from organic to inorganic matter. This wall painting is made with a photochemical paint that reduces the pollutant, such as NOx (nitrogen monoxide), improving air quality.The tree painted on the walls works like a natural tree that cleans\" the air and makes a small contribution to a better urban environment.\""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work1> .
+
+<item/work10> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Bastardilla "^^xsd:string ;
+    schema:dateCreated "2014"^^xsd:gYear ;
+    crm:P102_has_title <title/work10> ;
+    crm:P129_is_about "subject/human figure"^^xsd:string ;
+    crm:P138_represents <theme/social_issue> ;
+    crm:P1_is_identified_by <identifier/work10> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"This untitled mural, created by Colombian street artist Bastardilla, is located on the exterior wall of the Liceo Scientifico Augusto Righi branch in Via Tolmino 9, Bologna, Italy. It is part of the FRONTIER street art project. The mural depicts a circle of \"matchstick children\" sitting together, collectively igniting a flame—a symbol of the spread of knowledge and the power of collective wisdom. These \"matchstick children\" represent the awakening of pre-adolescent thought, conveying the immense potential contained within young minds.\""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work10> .
+
+<item/work11> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Etnik "^^xsd:string ;
+    schema:dateCreated "2012"^^xsd:gYear ;
+    crm:P102_has_title <title/work11> ;
+    crm:P129_is_about "subject/geometric shapes"^^xsd:string ;
+    crm:P138_represents <theme/environment> ;
+    crm:P1_is_identified_by <identifier/work11> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"Represent the precarious balance of the human being and the speed of the contemporary world. The urban agglomerations are broken down and overlapped and the geometrically extreme architecture becomes the emblem of the concept of \"urban cage\", a sort of poetics of the artist who sees metropolitan centers as places where man is trapped and which he criticizes with the use of strong colors and a bright and contrasting chromatic range, in wall paintings in which sometimes the identification of the buildings is almost impossible.\""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work11> .
+
+<item/work12> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Blu "^^xsd:string ;
+    schema:dateCreated "2013"^^xsd:gYear ;
+    crm:P102_has_title <title/work12> ;
+    crm:P129_is_about "subject/city"^^xsd:string ;
+    crm:P138_represents <theme/social_issue_> ;
+    crm:P1_is_identified_by <identifier/work12> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"This large-scale mural by the Italian street artist Blu, painted on the facade of the XM24 social center in Bologna’s Bolognina district, depicts a symbolic battle between two opposing forces within the city: a wealthy, ruthless side represented by figures hurling mortadellas, and a grassroots, justice-driven side throwing pumpkins and watermelons. Drawing inspiration from The Lord of the Rings, the artwork reflects over fifteen years of social movements. With a dramatic contrast between intricate black-and-white architectural ruins and vibrant, color-filled zones, the mural serves as both a critique of gentrification and a powerful visual narrative of urban resistance.\""^^xsd:string ;
+    crm:P44_has_condition <condition/destroyed> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work12> .
+
+<item/work2> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Bastardilla"^^xsd:string,
+        "person/Ericailcane"^^xsd:string ;
+    schema:dateCreated "2020"^^xsd:gYear ;
+    crm:P102_has_title <title/work2> ;
+    crm:P129_is_about "subject/animal"^^xsd:string,
+        "subject/human figure"^^xsd:string ;
+    crm:P138_represents <theme/social_issue> ;
+    crm:P1_is_identified_by <identifier/work2> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"One one side there are some female figures throwing purple balloons using a surgical mask as a slingshot . On the other side there are mice sheltering from those balloons behind coins, holding cotton buds\""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/gate>,
+        <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work2> .
+
+<item/work3> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Collettivo FX"^^xsd:string ;
+    schema:dateCreated "2020"^^xsd:gYear ;
+    crm:P102_has_title <title/work3> ;
+    crm:P129_is_about "subject/human figure"^^xsd:string ;
+    crm:P138_represents <theme/history>,
+        <theme/social_issue> ;
+    crm:P1_is_identified_by <identifier/work3> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"Woman crying big tears. In one tear there are the bodies of the victims, in the other one the clock fixed at the hour of the attack. \""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work3> .
+
+<item/work4> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Orticanoodles"^^xsd:string ;
+    schema:dateCreated "2017"^^xsd:gYear ;
+    crm:P102_has_title <title/work4> ;
+    crm:P129_is_about "subject/human figure"^^xsd:string ;
+    crm:P138_represents <theme/history>,
+        <theme/social_issue> ;
+    crm:P1_is_identified_by <identifier/work4> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"The artwork depicts the face of Irma Bandiera, a young partisan courier who was tortured and killed by the fascists in 1944, with a proud gaze and vibrant colors emerging from the wall. The graffiti aims to restore visibility and dignity to her figure, transforming the site into a place of public memory and visual resistance.\""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work4> .
+
+<item/work5> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Luis Gutierrez"^^xsd:string ;
+    schema:dateCreated "1998"^^xsd:gYear ;
+    crm:P102_has_title <title/work5> ;
+    crm:P129_is_about "subject/human figure"^^xsd:string ;
+    crm:P138_represents <theme/history> ;
+    crm:P1_is_identified_by <identifier/work5> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"This mural is an example of the strength of the drawing, sensual and sharp, with which the Latin American artist has created a personal mythology, a balance between the real and the imaginary, between rituals and archaic myths, human legends and characters such as Fidel Castro and even Caravaggio.\""^^xsd:string ;
+    crm:P44_has_condition <condition/restored>,
+        <condition/visible> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work5> .
+
+<item/work6> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Honet"^^xsd:string ;
+    schema:dateCreated "2012"^^xsd:gYear ;
+    crm:P102_has_title <title/work6> ;
+    crm:P129_is_about "subject/animal"^^xsd:string ;
+    crm:P138_represents <theme/history>,
+        <theme/social_issue> ;
+    crm:P1_is_identified_by <identifier/work6> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"A large elephant with a castle on its back is being dragged through the air by colourful balloons, three black birds appear ready to poke holes in them. According to the artist, he was inspired for this mural by a huge fountain in the form of an elephant that Napoleon wanted to place in Bastille Square in Paris to celebrate his victories and power. Work stopped after the defeat at Waterloo. The elephant has always been a symbol of strength. In this case, although enormous in size, it is so light that it can be carried by a handful of balloons that can be pierced by a simple bird in flight. The reference to power (even regal power) that can be as great as it is fragile is obvious: Honet nevertheless represents this theme in a delicate and cheerful manner.\""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work6> .
+
+<item/work7> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/ALice Pasquini"^^xsd:string ;
+    schema:dateCreated "2018"^^xsd:gYear ;
+    crm:P102_has_title <title/work7> ;
+    crm:P129_is_about "subject/human figure"^^xsd:string ;
+    crm:P138_represents <theme/identity> ;
+    crm:P1_is_identified_by <identifier/work7> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"Alice depicted a girl with a bunch of colourful flowers in her hand, hiding part of her face behind the curtain, recalling that street art “is an art that stirs up controversy” and during her career there has certainly been no shortage of problems, but acknowledging that after all “it is the risk of signing one's name”.\""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/gate> ;
+    crm:P53_has_former_or_current_location <place/work7> .
+
+<item/work8> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Nemo"^^xsd:string ;
+    schema:dateCreated "2017"^^xsd:gYear ;
+    crm:P102_has_title <title/work8> ;
+    crm:P129_is_about "subject/human figure"^^xsd:string ;
+    crm:P138_represents <theme/social_issue_> ;
+    crm:P1_is_identified_by <identifier/work8> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"The flaccid, grotesque and soft appearance with which Nemo's depicts its characters is ultimately intended as a critique of contemporary society, of the perfection and apparent immortality into which it projects us, heedless of the decadence of the human being and his contradictions that for thousands of years have led him to repeat the same mistakes over and over again.\""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work8> .
+
+<item/work9> a crm:E22_Man-Made_Object ;
+    dcterms:creator "person/Dado "^^xsd:string,
+        "person/Mambo"^^xsd:string ;
+    schema:dateCreated "2018"^^xsd:gYear ;
+    crm:P102_has_title <title/work9> ;
+    crm:P129_is_about "subject/geometric shapes"^^xsd:string ;
+    crm:P138_represents <theme/environment> ;
+    crm:P1_is_identified_by <identifier/work9> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300056477>"^^xsd:string ;
+    crm:P3_has_note "\"This untitled mural was created in 2018 by Italian street artists Dado (Alessandro Ferri) and Mambo (Elvis Mambo Pregnolato). It is located on the exterior wall of the CISL (Italian Confederation of Workers' Trade Unions) headquarters on Via Milazzo in Bologna. The large-scale mural—approximately 50 meters wide and 12 meters high—uses red and green as dominant colors, echoing the identity of the union. The artwork features two women wearing safety helmets and a man with a mask and helmet, symbolizing labor and highlighting the importance of workers’ safety. Blending abstract style with figurative elements, the mural pays tribute to the working class and reflects the artists' commitment to merging street art with social themes.\""^^xsd:string ;
+    crm:P44_has_condition <condition/visible> ;
+    crm:P46_forms_part_of <support/wall> ;
+    crm:P53_has_former_or_current_location <place/work9> .
+
+<person/ANDRECO> a crm:E39_Actor .
+
+<person/Alice_Pasquini> a crm:E39_Actor .
+
+<person/Bastardilla> dcterms:creator "crm:E39_Actor"^^xsd:string .
+
+<person/Bastardilla_> a crm:E39_Actor .
+
+<person/Blu_> a crm:E39_Actor .
+
+<person/Collettivo_FX> a crm:E39_Actor .
+
+<person/Dado_> a crm:E39_Actor .
+
+<person/Ericailcane> a crm:E39_Actor .
+
+<person/Etnik_> a crm:E39_Actor .
+
+<person/Honet> a crm:E39_Actor .
+
+<person/Luis_Gutierrez> a crm:E39_Actor .
+
+<person/Mambo> dcterms:creator "crm:E39_Actor"^^xsd:string .
+
+<person/Nemo> a crm:E39_Actor .
+
+<strart:Conceptual_Theme> rdfs:subClassOf "crm:E28_Conceptual_Object"^^xsd:string .
+
+<strart:Visual_Subject> rdfs:subClassOf "crm:E28_Conceptual_Object"^^xsd:string .
+
+<subject/animal> a <Visual_Subject> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300386044>"^^xsd:string,
+        "<http://vocab.getty.edu/aat/aat:300386044>"^^xsd:string .
+
+<subject/city> a <Visual_Subject> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300008389>"^^xsd:string .
+
+<subject/geometric_shapes> a <Visual_Subject> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300263819>"^^xsd:string,
+        "<http://vocab.getty.edu/aat/aat:300263819>"^^xsd:string .
+
+<subject/human_figure> a <Visual_Subject> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300404114>"^^xsd:string,
+        "<http://vocab.getty.edu/aat/aat:300404114>"^^xsd:string .
+
+<subject/nature_> a <Visual_Subject> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300179372>"^^xsd:string .
+
+<support/wal> a crm:E26_Physical_Feature ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300002469>"^^xsd:string .
+
+<condition/destroyed> a crm:E3_Condition_State ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300404029>"^^xsd:string .
+
+<condition/restored> a crm:E3_Condition_State ;
+    rdfs:label "\"restored\""^^xsd:string .
+
+<geo/work1> a schema:GeoCoordinates ;
+    schema:latitude "44.503.632" ;
+    schema:longitude "11.328.083" .
+
+<geo/work10> a schema:GeoCoordinates ;
+    schema:latitude "44.497.619.027.333.800" ;
+    schema:longitude "11.317.358.435.329.300" .
+
+<geo/work11> a schema:GeoCoordinates ;
+    schema:latitude "4.450.317.612.551.690" ;
+    schema:longitude "11.361.788.680.915.600" .
+
+<geo/work12> a schema:GeoCoordinates ;
+    schema:latitude "4.451.253.918.964.690" ;
+    schema:longitude "11.341.066.494.409.200" .
+
+<geo/work2> a schema:GeoCoordinates ;
+    schema:latitude "44.495.195" ;
+    schema:longitude "11.328.723" .
+
+<geo/work3> a schema:GeoCoordinates ;
+    schema:latitude "44.505.668.270.871.800" ;
+    schema:longitude "11.325.199.794.611.100" .
+
+<geo/work4> a schema:GeoCoordinates ;
+    schema:latitude "44.492.498.950.484.200" ;
+    schema:longitude "11.321.570.675.591.500" .
+
+<geo/work5> a schema:GeoCoordinates ;
+    schema:latitude "444.968.201.830.529" ;
+    schema:longitude "11.352.047.613.089.900" .
+
+<geo/work6> a schema:GeoCoordinates ;
+    schema:latitude "44.504.131.351.905.600" ;
+    schema:longitude "11.360.051.380.915.600" .
+
+<geo/work7> a schema:GeoCoordinates ;
+    schema:latitude "4.449.569.314.126.290" ;
+    schema:longitude "11.330.873.238.586.500" .
+
+<geo/work8> a schema:GeoCoordinates ;
+    schema:latitude "\"44.485894340977886\"^^xsd:float" ;
+    schema:longitude "\"11.35276614473806\"^^xsd:float" .
+
+<geo/work9> a schema:GeoCoordinates ;
+    schema:latitude "4.450.365.282.376.490" ;
+    schema:longitude "11.340.031.180.915.600" .
+
+<identifier/work1> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work1\""^^xsd:string .
+
+<identifier/work10> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work10\""^^xsd:string .
+
+<identifier/work11> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work11\""^^xsd:string .
+
+<identifier/work12> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work12\""^^xsd:string .
+
+<identifier/work2> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work2\""^^xsd:string .
+
+<identifier/work3> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work3\""^^xsd:string .
+
+<identifier/work4> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work4\""^^xsd:string .
+
+<identifier/work5> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work5\""^^xsd:string .
+
+<identifier/work6> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work6\""^^xsd:string .
+
+<identifier/work7> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work7\""^^xsd:string .
+
+<identifier/work8> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work8\""^^xsd:string .
+
+<identifier/work9> a crm:E42_Identifier ;
+    rdfs:label "\"streetart-bo-work9\""^^xsd:string .
+
+<place/work1> a crm:E53_Place ;
+    rdfs:label "\"Via dello Scalo 32\""^^xsd:string ;
+    schema:geo <geo/work1> .
+
+<place/work10> a crm:E53_Place ;
+    rdfs:label "\"Via Tolmino 9\""^^xsd:string ;
+    schema:geo <geo/work10> .
+
+<place/work11> a crm:E53_Place ;
+    rdfs:label "\"Via del Lavoro 3\""^^xsd:string ;
+    schema:geo <geo/work11> .
+
+<place/work12> a crm:E53_Place ;
+    rdfs:label "\"Via Fioravanti 24\""^^xsd:string ;
+    schema:geo <geo/work12> .
+
+<place/work2> a crm:E53_Place ;
+    rdfs:label "\"Via del Pratello\""^^xsd:string ;
+    schema:geo <geo/work2> .
+
+<place/work3> a crm:E53_Place ;
+    rdfs:label "\"Via Camillo Casarini 19 \""^^xsd:string ;
+    schema:geo <geo/work3> .
+
+<place/work4> a crm:E53_Place ;
+    rdfs:label "\"Via Turati 84\""^^xsd:string ;
+    schema:geo <geo/work4> .
+
+<place/work5> a crm:E53_Place ;
+    rdfs:label "\"Via Zamboni 38\""^^xsd:string ;
+    schema:geo <geo/work5> .
+
+<place/work6> a crm:E53_Place ;
+    rdfs:label "\"via del Lavoro 18\""^^xsd:string ;
+    schema:geo <geo/work6> .
+
+<place/work7> a crm:E53_Place ;
+    rdfs:label "\"Via del Pratello 69\""^^xsd:string ;
+    schema:geo <geo/work7> .
+
+<place/work8> a crm:E53_Place ;
+    rdfs:label "\"Via Orfeo 44\""^^xsd:string ;
+    schema:geo <geo/work8> .
+
+<place/work9> a crm:E53_Place ;
+    rdfs:label "\"Via Milazzo 14\""^^xsd:string ;
+    schema:geo <geo/work9> .
+
+<theme/identity> a <Conceptual_Theme> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300257052>"^^xsd:string .
+
+<title/work1> a crm:E35_Title ;
+    rdfs:label "\"Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)\""^^xsd:string .
+
+<title/work10> a crm:E35_Title ;
+    rdfs:label "\"Mural of Bastardilla in Via Tolmino 9\""^^xsd:string .
+
+<title/work11> a crm:E35_Title ;
+    rdfs:label "\"Mural of Etnik in Via del Lavoro 3\""^^xsd:string .
+
+<title/work12> a crm:E35_Title ;
+    rdfs:label "\"Mural of Blu in Via Fioravanti 24\""^^xsd:string .
+
+<title/work2> a crm:E35_Title ;
+    rdfs:label "\"Mural of Ericailcane and Bastardilla in Via del Pratello \""^^xsd:string .
+
+<title/work3> a crm:E35_Title ;
+    rdfs:label "\"Mural of Collettivo FX in Dumbo \""^^xsd:string .
+
+<title/work4> a crm:E35_Title ;
+    rdfs:label "\"Mural of Orticanoodles in via Turati 84\""^^xsd:string .
+
+<title/work5> a crm:E35_Title ;
+    rdfs:label "\"Mural of Luis Gutierrez in Via Zamboni\""^^xsd:string .
+
+<title/work6> a crm:E35_Title ;
+    rdfs:label "\"Mural of Honet in via del Lavoro 18\""^^xsd:string .
+
+<title/work7> a crm:E35_Title ;
+    rdfs:label "\"Mural of Alice Pasquini in Via del Pratello\""^^xsd:string .
+
+<title/work8> a crm:E35_Title ;
+    rdfs:label "\"Mural of Nemo in Via Orfeo\""^^xsd:string .
+
+<title/work9> a crm:E35_Title ;
+    rdfs:label "\"Mural of Dado e Mambo in Via Milazzo 14\""^^xsd:string .
+
+<support/gate> a crm:E26_Physical_Feature ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300052373>"^^xsd:string .
+
+<theme/social_issue_> a <Conceptual_Theme> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300055286>"^^xsd:string .
+
+<theme/environment> a <Conceptual_Theme> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300404580>"^^xsd:string .
+
+<theme/history> a <E28_Conceptual_Object>,
+        <Conceptual_Theme> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300386045>"^^xsd:string .
+
+<theme/social_issue> a <Conceptual_Theme> ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300055286>"^^xsd:string .
+
+<condition/visible> a crm:E3_Condition_State ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300222224>"^^xsd:string .
+
+<support/wall> a crm:E26_Physical_Feature ;
+    crm:P2_has_type "<http://vocab.getty.edu/aat/300002469>"^^xsd:string .
+
