@@ -6,13 +6,13 @@ import pandas as pd
 # Namespaces
 SCHEMA = Namespace("https://schema.org/")
 CRM = Namespace("https://www.cidoc-crm.org/")
-STRART = Namespace("https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl#")
+STRART = Namespace("https://github.com/streetart-bo-project/semantic-library-street-art/blob/main/final-csv-ttl/final.ttl#")
 
 # 创建 RDF 图
 g = rdflib.Graph()
 
 # Base URI
-base_uri = "https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl#"
+base_uri = "https://github.com/streetart-bo-project/semantic-library-street-art/blob/main/final-csv-ttl/final.ttl#"
 
 # 绑定命名空间
 g.bind("schema", SCHEMA)

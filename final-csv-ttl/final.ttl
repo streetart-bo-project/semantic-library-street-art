@@ -8,10 +8,10 @@
 @prefix schema: <https://schema.org/> .
 @prefix strart: <https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl#> .
+@base <https://github.com/streetart-bo-project/semantic-library-street-art/blob/main/final-csv-ttl/final.ttl#> .
 
-<https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl> rdf:type owl:Ontology ;
-                                                                                                     owl:versionIRI <https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl> .
+<https://github.com/streetart-bo-project/semantic-library-street-art/blob/main/final-csv-ttl/final.ttl> rdf:type owl:Ontology ;
+                                                                                                     owl:versionIRI <https://github.com/streetart-bo-project/semantic-library-street-art/blob/main/final-csv-ttl/final.ttl> .
 
 #################################################################
 #    Annotation properties
