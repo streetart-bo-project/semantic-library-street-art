@@ -1,0 +1,408 @@
+﻿subject;predicate;object
+item/work1;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work1;rdf:type;crm:E22_Man-Made_Object
+item/work1;crm:P1_is_identified_by;identifier/work1
+identifier/work1;rdf:type;crm:E42_Identifier
+identifier/work1;rdfs:label;"""streetart-bo-work1"""
+item/work1;crm:P102_has_title;title/work1
+title/work1;rdf:type;crm:E35_Title
+title/work1;rdfs:label;"""Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)"""
+item/work1;crm:P53_has_former_or_current_location;place/work1
+place/work1;rdf:type;crm:E53_Place
+place/work1;rdfs:label;"""Via dello Scalo 32"""
+place/work1;schema:geo;geo/work1
+geo/work1;rdf:type;schema:GeoCoordinates
+geo/work1;schema:latitude;44.503.632
+geo/work1;schema:longitude;11.328.083
+item/work1;dcterms:creator;person/ANDRECO
+person/ANDRECO;rdf:type;crm:E39_Actor
+item/work1;crm:P129_is_about;subject/nature 
+subject/nature ;rdf:type;strart:Visual_Subject
+subject/nature ;crm:P2_has_type;<http://vocab.getty.edu/aat/300179372>
+strart:Visual_Subject;"rdfs:subClassOf";crm:E28_Conceptual_Object
+item/work1;crm:P138_represents;theme/environment
+theme/environment;rdf:type;strart:Conceptual_Theme
+theme/environment;crm:P2_has_type;<http://vocab.getty.edu/aat/300404580>
+"strart:Conceptual_Theme";"rdfs:subClassOf";crm:E28_Conceptual_Object
+item/work1;schema:dateCreated;2012
+item/work1;crm:P3_has_note;"The work represents a large tree, inspired by the Philosophical Tree of the Alchemists of the fourteenth century. A large egg and a crystal also appear in the painting, symbols representing the transition from organic to inorganic matter. This wall painting is made with a photochemical paint that reduces the pollutant, such as NOx (nitrogen monoxide), improving air quality.The tree painted on the walls works like a natural tree that "cleans" the air and makes a small contribution to a better urban environment."
+item/work1;crm:P46_forms_part_of;support/wall
+support/wall;rdf:type;crm:E26_Physical_Feature
+support/wall;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work1;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+item/work2;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work2;rdf:type;crm:E22_Man-Made_Object
+item/work2;crm:P1_is_identified_by;identifier/work2
+identifier/work2;rdf:type;crm:E42_Identifier
+identifier/work2;rdfs:label;"""streetart-bo-work2"""
+item/work2;crm:P102_has_title;title/work2
+title/work2;rdf:type;crm:E35_Title
+title/work2;rdfs:label;"""Mural of Ericailcane and Bastardilla in Via del Pratello """
+item/work2;crm:P53_has_former_or_current_location;place/work2
+place/work2;rdf:type;crm:E53_Place
+place/work2;rdfs:label;"""Via del Pratello"""
+place/work2;schema:geo;geo/work2
+geo/work2;rdf:type;schema:GeoCoordinates
+geo/work2;schema:latitude;44.495.195
+geo/work2;schema:longitude;11.328.723
+item/work2;dcterms:creator;person/Ericailcane
+person/Ericailcane;rdf:type;crm:E39_Actor
+item/work2;dcterms:creator;person/Bastardilla
+person/Bastardilla;dcterms:creator;crm:E39_Actor
+item/work2;crm:P129_is_about;subject/human figure
+subject/human figure;rdf:type;strart:Visual_Subject
+subject/human figure;crm:P2_has_type;<http://vocab.getty.edu/aat/aat:300404114>
+item/work2;crm:P129_is_about;subject/animal
+subject/animal;rdf:type;strart:Visual_Subject
+subject/animal;crm:P2_has_type;<http://vocab.getty.edu/aat/aat:300386044>
+item/work2;crm:P138_represents;theme/social issue
+theme/social issue;rdf:type;strart:Conceptual_Theme
+theme/social issue;crm:P2_has_type;<http://vocab.getty.edu/aat/300055286>
+item/work2;schema:dateCreated;2020
+item/work2;crm:P3_has_note;"""One one side there are some female figures throwing purple balloons using a surgical mask as a slingshot . On the other side there are mice sheltering from those balloons behind coins, holding cotton buds"""
+item/work2;crm:P46_forms_part_of;support/wall
+support/wall;rdf:type;crm:E26_Physical_Feature
+support/wall;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work2;crm:P46_forms_part_of;support/gate
+support/gate;rdf:type;crm:E26_Physical_Feature
+support/gate;crm:P2_has_type;<http://vocab.getty.edu/aat/300052373>
+item/work2;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+
+item/work3;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work3;rdf:type;crm:E22_Man-Made_Object
+item/work3;crm:P1_is_identified_by;identifier/work3
+identifier/work3;rdf:type;crm:E42_Identifier
+identifier/work3;rdfs:label;"""streetart-bo-work3"""
+item/work3;crm:P102_has_title;title/work3
+title/work3;rdf:type;crm:E35_Title
+title/work3;rdfs:label;"""Mural of Collettivo FX in Dumbo """
+item/work3;crm:P53_has_former_or_current_location;place/work3
+place/work3;rdf:type;crm:E53_Place
+place/work3;rdfs:label;"""Via Camillo Casarini 19 """
+place/work3;schema:geo;geo/work3
+geo/work3;rdf:type;schema:GeoCoordinates
+geo/work3;schema:latitude;44.505.668.270.871.800
+geo/work3;schema:longitude;11.325.199.794.611.100
+item/work3;dcterms:creator;person/Collettivo FX
+person/Collettivo FX;rdf:type;crm:E39_Actor
+item/work3;crm:P129_is_about;subject/human figure
+subject/human figure;rdf:type;strart:Visual_Subject
+subject/human figure;crm:P2_has_type;<http://vocab.getty.edu/aat/300404114>
+item/work3;crm:P138_represents;theme/social issue
+theme/social issue;rdf:type;strart:Conceptual_Theme
+theme/social issue;crm:P2_has_type;<http://vocab.getty.edu/aat/300055286>
+item/work3;crm:P138_represents;theme/history
+theme/history;rdf:type;E28_Conceptual_Object
+theme/history;crm:P2_has_type;<http://vocab.getty.edu/aat/300386045>
+item/work3;schema:dateCreated;2020
+item/work3;crm:P3_has_note;"""Woman crying big tears. In one tear there are the bodies of the victims, in the other one the clock fixed at the hour of the attack. """
+item/work3;crm:P46_forms_part_of;support/wall
+support/wall;rdf:type;crm:E26_Physical_Feature
+support/wall;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work3;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+
+item/work4;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work4;rdf:type;crm:E22_Man-Made_Object
+item/work4;crm:P1_is_identified_by;identifier/work4
+identifier/work4;rdf:type;crm:E42_Identifier
+identifier/work4;rdfs:label;"""streetart-bo-work4"""
+item/work4;crm:P102_has_title;title/work4
+title/work4;rdf:type;crm:E35_Title
+title/work4;rdfs:label;"""Mural of Orticanoodles in via Turati 84"""
+item/work4;crm:P53_has_former_or_current_location;place/work4
+place/work4;rdf:type;crm:E53_Place
+place/work4;rdfs:label;"""Via Turati 84"""
+place/work4;schema:geo;geo/work4
+geo/work4;rdf:type;schema:GeoCoordinates
+geo/work4;schema:latitude;44.492.498.950.484.200
+geo/work4;schema:longitude;11.321.570.675.591.500
+item/work4;dcterms:creator;person/Orticanoodles
+person/Collettivo FX;rdf:type;crm:E39_Actor
+item/work4;crm:P129_is_about;subject/human figure
+subject/human figure;rdf:type;strart:Visual_Subject
+subject/human figure;crm:P2_has_type;<http://vocab.getty.edu/aat/300404114>
+item/work4;crm:P138_represents;theme/social issue
+theme/social issue;rdf:type;strart:Conceptual_Theme
+theme/social issue;crm:P2_has_type;<http://vocab.getty.edu/aat/300055286>
+item/work4;crm:P138_represents;theme/history
+theme/history;rdf:type;strart:Conceptual_Theme
+theme/history;crm:P2_has_type;<http://vocab.getty.edu/aat/300386045>
+item/work4;schema:dateCreated;2017
+item/work4;crm:P3_has_note;"""The artwork depicts the face of Irma Bandiera, a young partisan courier who was tortured and killed by the fascists in 1944, with a proud gaze and vibrant colors emerging from the wall. The graffiti aims to restore visibility and dignity to her figure, transforming the site into a place of public memory and visual resistance."""
+item/work4;crm:P46_forms_part_of;support/wall
+support/wall;rdf:type;crm:E26_Physical_Feature
+support/wall;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work4;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+
+item/work5;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work5;rdf:type;crm:E22_Man-Made_Object
+item/work5;crm:P1_is_identified_by;identifier/work5
+identifier/work5;rdf:type;crm:E42_Identifier
+identifier/work5;rdfs:label;"""streetart-bo-work5"""
+item/work5;crm:P102_has_title;title/work5
+title/work5;rdf:type;crm:E35_Title
+title/work5;rdfs:label;"""Mural of Luis Gutierrez in Via Zamboni"""
+item/work5;crm:P53_has_former_or_current_location;place/work5
+place/work5;rdf:type;crm:E53_Place
+place/work5;rdfs:label;"""Via Zamboni 38"""
+place/work5;schema:geo;geo/work5
+geo/work5;rdf:type;schema:GeoCoordinates
+geo/work5;schema:latitude;444.968.201.830.529
+geo/work5;schema:longitude;11.352.047.613.089.900
+item/work5;dcterms:creator;person/Luis Gutierrez
+person/Luis Gutierrez;rdf:type;crm:E39_Actor
+item/work5;crm:P129_is_about;subject/human figure
+subject/human figure;rdf:type;strart:Visual_Subject
+subject/human figure;crm:P2_has_type;<http://vocab.getty.edu/aat/300404114>
+item/work5;crm:P138_represents;theme/history
+theme/history;rdf:type;strart:Conceptual_Theme
+theme/history;crm:P2_has_type;<http://vocab.getty.edu/aat/300386045>
+item/work5;schema:dateCreated;1998
+item/work5;crm:P3_has_note;"""This mural is an example of the strength of the drawing, sensual and sharp, with which the Latin American artist has created a personal mythology, a balance between the real and the imaginary, between rituals and archaic myths, human legends and characters such as Fidel Castro and even Caravaggio."""
+item/work5;crm:P46_forms_part_of;support/wall
+support/wall;rdf:type;crm:E26_Physical_Feature
+support/wall;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work5;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+item/work5;crm:P44_has_condition;condition/restored
+condition/restored;rdf:type;crm:E3_Condition_State
+condition/restored;rdfs:label;"""restored"""
+
+item/work6;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work6;rdf:type;crm:E22_Man-Made_Object
+item/work6;crm:P1_is_identified_by;identifier/work6
+identifier/work6;rdf:type;crm:E42_Identifier
+identifier/work6;rdfs:label;"""streetart-bo-work6"""
+item/work6;crm:P102_has_title;title/work6
+title/work6;rdf:type;crm:E35_Title
+title/work6;rdfs:label;"""Mural of Honet in via del Lavoro 18"""
+item/work6;crm:P53_has_former_or_current_location;place/work6
+place/work6;rdf:type;crm:E53_Place
+place/work6;rdfs:label;"""via del Lavoro 18"""
+place/work6;schema:geo;geo/work6
+geo/work6;rdf:type;schema:GeoCoordinates
+geo/work6;schema:latitude;44.504.131.351.905.600
+geo/work6;schema:longitude;11.360.051.380.915.600
+item/work6;dcterms:creator;person/Honet
+person/Honet;rdf:type;crm:E39_Actor
+item/work6;crm:P129_is_about;subject/animal
+subject/animal;rdf:type;strart:Visual_Subject
+subject/animal;crm:P2_has_type;<http://vocab.getty.edu/aat/300386044>
+item/work6;crm:P138_represents;theme/social issue
+theme/social issue;rdf:type;strart:Conceptual_Theme
+theme/social issue;crm:P2_has_type;<http://vocab.getty.edu/aat/300055286>
+item/work6;crm:P138_represents;theme/history
+theme/history;rdf:type;strart:Conceptual_Theme
+theme/history;crm:P2_has_type;<http://vocab.getty.edu/aat/300386045>
+item/work6;schema:dateCreated;2012
+item/work6;crm:P3_has_note;"""A large elephant with a castle on its back is being dragged through the air by colourful balloons, three black birds appear ready to poke holes in them. According to the artist, he was inspired for this mural by a huge fountain in the form of an elephant that Napoleon wanted to place in Bastille Square in Paris to celebrate his victories and power. Work stopped after the defeat at Waterloo. The elephant has always been a symbol of strength. In this case, although enormous in size, it is so light that it can be carried by a handful of balloons that can be pierced by a simple bird in flight. The reference to power (even regal power) that can be as great as it is fragile is obvious: Honet nevertheless represents this theme in a delicate and cheerful manner."""
+item/work6;crm:P46_forms_part_of;support/wall
+support/wall;rdf:type;crm:E26_Physical_Feature
+support/wall;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work6;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+
+item/work7;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work7;rdf:type;crm:E22_Man-Made_Object
+item/work7;crm:P1_is_identified_by;identifier/work7
+identifier/work7;rdf:type;crm:E42_Identifier
+identifier/work7;rdfs:label;"""streetart-bo-work7"""
+item/work7;crm:P102_has_title;title/work7
+title/work7;rdf:type;crm:E35_Title
+title/work7;rdfs:label;"""Mural of Alice Pasquini in Via del Pratello"""
+item/work7;crm:P53_has_former_or_current_location;place/work7
+place/work7;rdf:type;crm:E53_Place
+place/work7;rdfs:label;"""Via del Pratello 69"""
+place/work7;schema:geo;geo/work7
+geo/work7;rdf:type;schema:GeoCoordinates
+geo/work7;schema:latitude;4.449.569.314.126.290
+geo/work7;schema:longitude;11.330.873.238.586.500
+item/work7;dcterms:creator;person/ALice Pasquini
+person/Alice Pasquini;rdf:type;crm:E39_Actor
+item/work7;crm:P129_is_about;subject/human figure
+subject/human figure;rdf:type;strart:Visual_Subject
+subject/human figure;crm:P2_has_type;<http://vocab.getty.edu/aat/300404114>
+item/work7;crm:P138_represents;theme/identity
+theme/identity;rdf:type;strart:Conceptual_Theme
+theme/identity;crm:P2_has_type;<http://vocab.getty.edu/aat/300257052>
+item/work7;schema:dateCreated;2018
+item/work7;crm:P3_has_note;"""Alice depicted a girl with a bunch of colourful flowers in her hand, hiding part of her face behind the curtain, recalling that street art “is an art that stirs up controversy” and during her career there has certainly been no shortage of problems, but acknowledging that after all “it is the risk of signing one's name”."""
+item/work7;crm:P46_forms_part_of;support/gate
+support/gate;rdf:type;crm:E26_Physical_Feature
+support/gate;crm:P2_has_type;<http://vocab.getty.edu/aat/300052373>
+item/work7;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+
+item/work8;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work8;rdf:type;crm:E22_Man-Made_Object
+item/work8;crm:P1_is_identified_by;identifier/work8
+identifier/work8;rdf:type;crm:E42_Identifier
+identifier/work8;rdfs:label;"""streetart-bo-work8"""
+item/work8;crm:P102_has_title;title/work8
+title/work8;rdf:type;crm:E35_Title
+title/work8;rdfs:label;"""Mural of Nemo in Via Orfeo"""
+item/work8;crm:P53_has_former_or_current_location;place/work8
+place/work8;rdf:type;crm:E53_Place
+place/work8;rdfs:label;"""Via Orfeo 44"""
+place/work8;schema:geo;geo/work8
+geo/work8;rdf:type;schema:GeoCoordinates
+geo/work8;schema:latitude;"""44.485894340977886""^^xsd:float"
+geo/work8;schema:longitude;"""11.35276614473806""^^xsd:float"
+item/work8;dcterms:creator;person/Nemo
+person/Nemo;rdf:type;crm:E39_Actor
+item/work8;crm:P129_is_about;subject/human figure
+subject/human figure;rdf:type;strart:Visual_Subject
+subject/human figure;crm:P2_has_type;<http://vocab.getty.edu/aat/300404114>
+item/work8;crm:P138_represents;theme/social issue 
+theme/social issue ;rdf:type;strart:Conceptual_Theme
+theme/social issue ;crm:P2_has_type;<http://vocab.getty.edu/aat/300055286>
+item/work8;schema:dateCreated;2017
+item/work8;crm:P3_has_note;"""The flaccid, grotesque and soft appearance with which Nemo's depicts its characters is ultimately intended as a critique of contemporary society, of the perfection and apparent immortality into which it projects us, heedless of the decadence of the human being and his contradictions that for thousands of years have led him to repeat the same mistakes over and over again."""
+item/work8;crm:P46_forms_part_of;support/wall
+support/wal;rdf:type;crm:E26_Physical_Feature
+support/wal;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work8;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+
+item/work9;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work9;rdf:type;crm:E22_Man-Made_Object
+item/work9;crm:P1_is_identified_by;identifier/work9
+identifier/work9;rdf:type;crm:E42_Identifier
+identifier/work9;rdfs:label;"""streetart-bo-work9"""
+item/work9;crm:P102_has_title;title/work9
+title/work9;rdf:type;crm:E35_Title
+title/work9;rdfs:label;"""Mural of Dado e Mambo in Via Milazzo 14"""
+item/work9;crm:P53_has_former_or_current_location;place/work9
+place/work9;rdf:type;crm:E53_Place
+place/work9;rdfs:label;"""Via Milazzo 14"""
+place/work9;schema:geo;geo/work9
+geo/work9;rdf:type;schema:GeoCoordinates
+geo/work9;schema:latitude;4.450.365.282.376.490
+geo/work9;schema:longitude;11.340.031.180.915.600
+item/work9;dcterms:creator;person/Dado 
+person/Dado ;rdf:type;crm:E39_Actor
+item/work9;dcterms:creator;person/Mambo
+person/Mambo;dcterms:creator;crm:E39_Actor
+item/work9;crm:P129_is_about;subject/geometric shapes
+subject/geometric shapes;rdf:type;strart:Visual_Subject
+subject/geometric shapes;crm:P2_has_type;<http://vocab.getty.edu/aat/300263819>
+item/work9;crm:P138_represents;theme/environment
+theme/environment;rdf:type;strart:Conceptual_Theme
+theme/environment;crm:P2_has_type;<http://vocab.getty.edu/aat/300404580>
+item/work9;schema:dateCreated;2018
+item/work9;crm:P3_has_note;"""This untitled mural was created in 2018 by Italian street artists Dado (Alessandro Ferri) and Mambo (Elvis Mambo Pregnolato). It is located on the exterior wall of the CISL (Italian Confederation of Workers' Trade Unions) headquarters on Via Milazzo in Bologna. The large-scale mural—approximately 50 meters wide and 12 meters high—uses red and green as dominant colors, echoing the identity of the union. The artwork features two women wearing safety helmets and a man with a mask and helmet, symbolizing labor and highlighting the importance of workers’ safety. Blending abstract style with figurative elements, the mural pays tribute to the working class and reflects the artists' commitment to merging street art with social themes."""
+item/work9;crm:P46_forms_part_of;support/wall
+support/wal;rdf:type;crm:E26_Physical_Feature
+support/wal;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work9;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+
+item/work10;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work10;rdf:type;crm:E22_Man-Made_Object
+item/work10;crm:P1_is_identified_by;identifier/work10
+identifier/work10;rdf:type;crm:E42_Identifier
+identifier/work10;rdfs:label;"""streetart-bo-work10"""
+item/work10;crm:P102_has_title;title/work10
+title/work10;rdf:type;crm:E35_Title
+title/work10;rdfs:label;"""Mural of Bastardilla in Via Tolmino 9"""
+item/work10;crm:P53_has_former_or_current_location;place/work10
+place/work10;rdf:type;crm:E53_Place
+place/work10;rdfs:label;"""Via Tolmino 9"""
+place/work10;schema:geo;geo/work10
+geo/work10;rdf:type;schema:GeoCoordinates
+geo/work10;schema:latitude;44.497.619.027.333.800
+geo/work10;schema:longitude;11.317.358.435.329.300
+item/work10;dcterms:creator;person/Bastardilla 
+person/Bastardilla ;rdf:type;crm:E39_Actor
+item/work10;crm:P129_is_about;subject/human figure
+subject/human figure;rdf:type;strart:Visual_Subject
+subject/human figure;crm:P2_has_type;<http://vocab.getty.edu/aat/aat:300404114>
+item/work10;crm:P138_represents;theme/social issue
+theme/social issue;rdf:type;strart:Conceptual_Theme
+theme/social issue;crm:P2_has_type;<http://vocab.getty.edu/aat/300055286>
+item/work10;schema:dateCreated;2014
+item/work10;crm:P3_has_note;"""This untitled mural, created by Colombian street artist Bastardilla, is located on the exterior wall of the Liceo Scientifico Augusto Righi branch in Via Tolmino 9, Bologna, Italy. It is part of the FRONTIER street art project. The mural depicts a circle of ""matchstick children"" sitting together, collectively igniting a flame—a symbol of the spread of knowledge and the power of collective wisdom. These ""matchstick children"" represent the awakening of pre-adolescent thought, conveying the immense potential contained within young minds."""
+item/work10;crm:P46_forms_part_of;support/wall
+support/wall;rdf:type;crm:E26_Physical_Feature
+support/wall;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work10;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+
+item/work11;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work11;rdf:type;crm:E22_Man-Made_Object
+item/work11;crm:P1_is_identified_by;identifier/work11
+identifier/work11;rdf:type;crm:E42_Identifier
+identifier/work11;rdfs:label;"""streetart-bo-work11"""
+item/work11;crm:P102_has_title;title/work11
+title/work11;rdf:type;crm:E35_Title
+title/work11;rdfs:label;"""Mural of Etnik in Via del Lavoro 3"""
+item/work11;crm:P53_has_former_or_current_location;place/work11
+place/work11;rdf:type;crm:E53_Place
+place/work11;rdfs:label;"""Via del Lavoro 3"""
+place/work11;schema:geo;geo/work11
+geo/work11;rdf:type;schema:GeoCoordinates
+geo/work11;schema:latitude;4.450.317.612.551.690
+geo/work11;schema:longitude;11.361.788.680.915.600
+item/work11;dcterms:creator;person/Etnik 
+person/Etnik ;rdf:type;crm:E39_Actor
+item/work11;crm:P129_is_about;subject/geometric shapes
+subject/geometric shapes;rdf:type;strart:Visual_Subject
+subject/geometric shapes;crm:P2_has_type;<http://vocab.getty.edu/aat/aat:300263819>
+item/work11;crm:P138_represents;theme/environment
+theme/environment;rdf:type;strart:Conceptual_Theme
+theme/environment;crm:P2_has_type;<http://vocab.getty.edu/aat/300404580>
+item/work11;schema:dateCreated;2012
+item/work11;crm:P3_has_note;"""Represent the precarious balance of the human being and the speed of the contemporary world. The urban agglomerations are broken down and overlapped and the geometrically extreme architecture becomes the emblem of the concept of ""urban cage"", a sort of poetics of the artist who sees metropolitan centers as places where man is trapped and which he criticizes with the use of strong colors and a bright and contrasting chromatic range, in wall paintings in which sometimes the identification of the buildings is almost impossible."""
+item/work11;crm:P46_forms_part_of;support/wall
+support/wall;rdf:type;crm:E26_Physical_Feature
+support/wall;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work11;crm:P44_has_condition;condition/visible
+condition/visible;rdf:type;crm:E3_Condition_State
+condition/visible;crm:P2_has_type;<http://vocab.getty.edu/aat/300222224>
+
+item/work12;crm:P2_has_type;<http://vocab.getty.edu/aat/300056477>
+item/work12;rdf:type;crm:E22_Man-Made_Object
+item/work12;crm:P1_is_identified_by;identifier/work12
+identifier/work12;rdf:type;crm:E42_Identifier
+identifier/work12;rdfs:label;"""streetart-bo-work12"""
+item/work12;crm:P102_has_title;title/work12
+title/work12;rdf:type;crm:E35_Title
+title/work12;rdfs:label;"""Mural of Blu in Via Fioravanti 24"""
+item/work12;crm:P53_has_former_or_current_location;place/work12
+place/work12;rdf:type;crm:E53_Place
+place/work12;rdfs:label;"""Via Fioravanti 24"""
+place/work12;schema:geo;geo/work12
+geo/work12;rdf:type;schema:GeoCoordinates
+geo/work12;schema:latitude;4.451.253.918.964.690
+geo/work12;schema:longitude;11.341.066.494.409.200
+item/work12;dcterms:creator;person/Blu 
+person/Blu ;rdf:type;crm:E39_Actor
+item/work12;crm:P129_is_about;subject/city
+subject/city;rdf:type;strart:Visual_Subject
+subject/city;crm:P2_has_type;<http://vocab.getty.edu/aat/300008389>
+item/work12;crm:P138_represents;theme/social issue 
+theme/social issue ;rdf:type;strart:Conceptual_Theme
+theme/social issue ;crm:P2_has_type;<http://vocab.getty.edu/aat/300055286>
+item/work12;schema:dateCreated;2013
+item/work12;crm:P3_has_note;"""This large-scale mural by the Italian street artist Blu, painted on the facade of the XM24 social center in Bologna’s Bolognina district, depicts a symbolic battle between two opposing forces within the city: a wealthy, ruthless side represented by figures hurling mortadellas, and a grassroots, justice-driven side throwing pumpkins and watermelons. Drawing inspiration from The Lord of the Rings, the artwork reflects over fifteen years of social movements. With a dramatic contrast between intricate black-and-white architectural ruins and vibrant, color-filled zones, the mural serves as both a critique of gentrification and a powerful visual narrative of urban resistance."""
+item/work12;crm:P46_forms_part_of;support/wall
+support/wall;rdf:type;crm:E26_Physical_Feature
+support/wall;crm:P2_has_type;<http://vocab.getty.edu/aat/300002469>
+item/work12;crm:P44_has_condition;condition/destroyed
+condition/destroyed;rdf:type;crm:E3_Condition_State
+condition/destroyed;crm:P2_has_type;<http://vocab.getty.edu/aat/300404029>
+
