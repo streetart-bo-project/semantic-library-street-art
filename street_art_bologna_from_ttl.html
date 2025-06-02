@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a63981fa7ca395737027cda6596a83e6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a63981fa7ca395737027cda6596a83e6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a63981fa7ca395737027cda6596a83e6 = L.map(
+                "map_a63981fa7ca395737027cda6596a83e6",
+                {
+                    center: [44.4949, 11.3426],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4011218e381bf070a6fc54ff4f994c0b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4011218e381bf070a6fc54ff4f994c0b.addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+            var marker_2e3f97244fb44b3aad8fca9563017b72 = L.marker(
+                [44.503632, 11.328083],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_8eadf040486de5660b336431631ea1cf = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_974df82208dcc9a516561483d967dcc7 = $(`<div id="html_974df82208dcc9a516561483d967dcc7" style="width: 100.0%; height: 100.0%;">     <b>Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)</b><br>     <i>Author:</i> ANDRECO<br>     <p>The work represents a large tree, inspired by the Philosophical Tree of the Alchemists of the fourteenth century. A large egg and a crystal also appear in the painting, symbols representing the transition from organic to inorganic matter. This wall painting is made with a photochemical paint that reduces the pollutant, such as NOx (nitrogen monoxide), improving air quality.The tree painted on the walls works like a natural tree that cleans" the air and makes a small contribution to a better urban environment.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work1</code>     </div>`)[0];
+                popup_8eadf040486de5660b336431631ea1cf.setContent(html_974df82208dcc9a516561483d967dcc7);
+            
+        
+
+        marker_2e3f97244fb44b3aad8fca9563017b72.bindPopup(popup_8eadf040486de5660b336431631ea1cf)
+        ;
+
+        
+    
+    
+            marker_2e3f97244fb44b3aad8fca9563017b72.bindTooltip(
+                `<div>
+                     Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_59c8d14d269f58d0d6baa1e6a499aaa0 = L.marker(
+                [44.497619, 11.317358],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_4cdbec03a8a46cde93bd965a30bfd387 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b27a064865325cd2dfab2fce8dc25edb = $(`<div id="html_b27a064865325cd2dfab2fce8dc25edb" style="width: 100.0%; height: 100.0%;">     <b>Mural of Bastardilla in Via Tolmino 9</b><br>     <i>Author:</i> Bastardilla <br>     <p>This untitled mural, created by Colombian street artist Bastardilla, is located on the exterior wall of the Liceo Scientifico Augusto Righi branch in Via Tolmino 9, Bologna, Italy. It is part of the FRONTIER street art project. The mural depicts a circle of "matchstick children" sitting together, collectively igniting a flame—a symbol of the spread of knowledge and the power of collective wisdom. These "matchstick children" represent the awakening of pre-adolescent thought, conveying the immense potential contained within young minds.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work10</code>     </div>`)[0];
+                popup_4cdbec03a8a46cde93bd965a30bfd387.setContent(html_b27a064865325cd2dfab2fce8dc25edb);
+            
+        
+
+        marker_59c8d14d269f58d0d6baa1e6a499aaa0.bindPopup(popup_4cdbec03a8a46cde93bd965a30bfd387)
+        ;
+
+        
+    
+    
+            marker_59c8d14d269f58d0d6baa1e6a499aaa0.bindTooltip(
+                `<div>
+                     Mural of Bastardilla in Via Tolmino 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4b3460dee01d10505884b70f62b31dce = L.marker(
+                [44.503176, 11.361788],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_b3696be727a2af68fa84667149317c28 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_44b20cb9a0f7f7b5f5e45be47bed3d5c = $(`<div id="html_44b20cb9a0f7f7b5f5e45be47bed3d5c" style="width: 100.0%; height: 100.0%;">     <b>Mural of Etnik in Via del Lavoro 3</b><br>     <i>Author:</i> Etnik <br>     <p>Represent the precarious balance of the human being and the speed of the contemporary world. The urban agglomerations are broken down and overlapped and the geometrically extreme architecture becomes the emblem of the concept of "urban cage", a sort of poetics of the artist who sees metropolitan centers as places where man is trapped and which he criticizes with the use of strong colors and a bright and contrasting chromatic range, in wall paintings in which sometimes the identification of the buildings is almost impossible.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work11</code>     </div>`)[0];
+                popup_b3696be727a2af68fa84667149317c28.setContent(html_44b20cb9a0f7f7b5f5e45be47bed3d5c);
+            
+        
+
+        marker_4b3460dee01d10505884b70f62b31dce.bindPopup(popup_b3696be727a2af68fa84667149317c28)
+        ;
+
+        
+    
+    
+            marker_4b3460dee01d10505884b70f62b31dce.bindTooltip(
+                `<div>
+                     Mural of Etnik in Via del Lavoro 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_42d095f08cf04fdcc36550efc7b6342e = L.marker(
+                [44.512539, 11.341066],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_574a188e7978e4cfa7bdd4a3c5039a1c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ba601826d0d9420354c653ee5d412358 = $(`<div id="html_ba601826d0d9420354c653ee5d412358" style="width: 100.0%; height: 100.0%;">     <b>Mural of Blu in Via Fioravanti 24</b><br>     <i>Author:</i> Blu <br>     <p>This large-scale mural by the Italian street artist Blu, painted on the facade of the XM24 social center in Bologna’s Bolognina district, depicts a symbolic battle between two opposing forces within the city: a wealthy, ruthless side represented by figures hurling mortadellas, and a grassroots, justice-driven side throwing pumpkins and watermelons. Drawing inspiration from The Lord of the Rings, the artwork reflects over fifteen years of social movements. With a dramatic contrast between intricate black-and-white architectural ruins and vibrant, color-filled zones, the mural serves as both a critique of gentrification and a powerful visual narrative of urban resistance.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work12</code>     </div>`)[0];
+                popup_574a188e7978e4cfa7bdd4a3c5039a1c.setContent(html_ba601826d0d9420354c653ee5d412358);
+            
+        
+
+        marker_42d095f08cf04fdcc36550efc7b6342e.bindPopup(popup_574a188e7978e4cfa7bdd4a3c5039a1c)
+        ;
+
+        
+    
+    
+            marker_42d095f08cf04fdcc36550efc7b6342e.bindTooltip(
+                `<div>
+                     Mural of Blu in Via Fioravanti 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3092acea0ac45b964b23ec9c3ec3ef61 = L.marker(
+                [44.495195, 11.328723],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_39417b53f256cd8b8f660d00eeb57a09 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_aee5775899168e4990dd448fd3d44b7b = $(`<div id="html_aee5775899168e4990dd448fd3d44b7b" style="width: 100.0%; height: 100.0%;">     <b>Mural of Ericailcane and Bastardilla in Via del Pratello </b><br>     <i>Author:</i> Ericailcane<br>     <p>One one side there are some female figures throwing purple balloons using a surgical mask as a slingshot . On the other side there are mice sheltering from those balloons behind coins, holding cotton buds</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work2</code>     </div>`)[0];
+                popup_39417b53f256cd8b8f660d00eeb57a09.setContent(html_aee5775899168e4990dd448fd3d44b7b);
+            
+        
+
+        marker_3092acea0ac45b964b23ec9c3ec3ef61.bindPopup(popup_39417b53f256cd8b8f660d00eeb57a09)
+        ;
+
+        
+    
+    
+            marker_3092acea0ac45b964b23ec9c3ec3ef61.bindTooltip(
+                `<div>
+                     Mural of Ericailcane and Bastardilla in Via del Pratello 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c6398685581b27dfaa3a32d40cb7e0b0 = L.marker(
+                [44.505668, 11.325199],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_6f9f7066d3590e7f7157cb3151835c68 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4a87d3007336ddd5cfa80ac0154f951e = $(`<div id="html_4a87d3007336ddd5cfa80ac0154f951e" style="width: 100.0%; height: 100.0%;">     <b>Mural of Collettivo FX in Dumbo </b><br>     <i>Author:</i> Collettivo FX<br>     <p>Woman crying big tears. In one tear there are the bodies of the victims, in the other one the clock fixed at the hour of the attack. </p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work3</code>     </div>`)[0];
+                popup_6f9f7066d3590e7f7157cb3151835c68.setContent(html_4a87d3007336ddd5cfa80ac0154f951e);
+            
+        
+
+        marker_c6398685581b27dfaa3a32d40cb7e0b0.bindPopup(popup_6f9f7066d3590e7f7157cb3151835c68)
+        ;
+
+        
+    
+    
+            marker_c6398685581b27dfaa3a32d40cb7e0b0.bindTooltip(
+                `<div>
+                     Mural of Collettivo FX in Dumbo 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cf58d6894425d97378f7ecb9064c9a33 = L.marker(
+                [44.492498, 11.32157],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_639ea2f678d1be62f582cbd1549e07eb = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_df5569ae3337e306e5b01a5df255d7d5 = $(`<div id="html_df5569ae3337e306e5b01a5df255d7d5" style="width: 100.0%; height: 100.0%;">     <b>Mural of Orticanoodles in via Turati 84</b><br>     <i>Author:</i> Orticanoodles<br>     <p>The artwork depicts the face of Irma Bandiera, a young partisan courier who was tortured and killed by the fascists in 1944, with a proud gaze and vibrant colors emerging from the wall. The graffiti aims to restore visibility and dignity to her figure, transforming the site into a place of public memory and visual resistance.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work4</code>     </div>`)[0];
+                popup_639ea2f678d1be62f582cbd1549e07eb.setContent(html_df5569ae3337e306e5b01a5df255d7d5);
+            
+        
+
+        marker_cf58d6894425d97378f7ecb9064c9a33.bindPopup(popup_639ea2f678d1be62f582cbd1549e07eb)
+        ;
+
+        
+    
+    
+            marker_cf58d6894425d97378f7ecb9064c9a33.bindTooltip(
+                `<div>
+                     Mural of Orticanoodles in via Turati 84
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4183be0ea62cce3a84fc42bc28b439e0 = L.marker(
+                [44.49682, 11.352047],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_e340545c381d766c6c66e79bbf5f9d48 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9fd1157735dd6b87607450ed30b29fd0 = $(`<div id="html_9fd1157735dd6b87607450ed30b29fd0" style="width: 100.0%; height: 100.0%;">     <b>Mural of Luis Gutierrez in Via Zamboni</b><br>     <i>Author:</i> Luis Gutierrez<br>     <p>This mural is an example of the strength of the drawing, sensual and sharp, with which the Latin American artist has created a personal mythology, a balance between the real and the imaginary, between rituals and archaic myths, human legends and characters such as Fidel Castro and even Caravaggio.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work5</code>     </div>`)[0];
+                popup_e340545c381d766c6c66e79bbf5f9d48.setContent(html_9fd1157735dd6b87607450ed30b29fd0);
+            
+        
+
+        marker_4183be0ea62cce3a84fc42bc28b439e0.bindPopup(popup_e340545c381d766c6c66e79bbf5f9d48)
+        ;
+
+        
+    
+    
+            marker_4183be0ea62cce3a84fc42bc28b439e0.bindTooltip(
+                `<div>
+                     Mural of Luis Gutierrez in Via Zamboni
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b6dddd9ace388dcfdeb10b4763494071 = L.marker(
+                [44.504131, 11.360051],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_681982425f7851fc2ff7d6e9346d6e49 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_917f3a81c6baf986b124fcf0cf4a7096 = $(`<div id="html_917f3a81c6baf986b124fcf0cf4a7096" style="width: 100.0%; height: 100.0%;">     <b>Mural of Honet in via del Lavoro 18</b><br>     <i>Author:</i> Honet<br>     <p>A large elephant with a castle on its back is being dragged through the air by colourful balloons, three black birds appear ready to poke holes in them. According to the artist, he was inspired for this mural by a huge fountain in the form of an elephant that Napoleon wanted to place in Bastille Square in Paris to celebrate his victories and power. Work stopped after the defeat at Waterloo. The elephant has always been a symbol of strength. In this case, although enormous in size, it is so light that it can be carried by a handful of balloons that can be pierced by a simple bird in flight. The reference to power (even regal power) that can be as great as it is fragile is obvious: Honet nevertheless represents this theme in a delicate and cheerful manner.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work6</code>     </div>`)[0];
+                popup_681982425f7851fc2ff7d6e9346d6e49.setContent(html_917f3a81c6baf986b124fcf0cf4a7096);
+            
+        
+
+        marker_b6dddd9ace388dcfdeb10b4763494071.bindPopup(popup_681982425f7851fc2ff7d6e9346d6e49)
+        ;
+
+        
+    
+    
+            marker_b6dddd9ace388dcfdeb10b4763494071.bindTooltip(
+                `<div>
+                     Mural of Honet in via del Lavoro 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_64472154062a4e0981963afdaf8f74e7 = L.marker(
+                [44.495693, 11.330873],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_9a68c5710849794fcb31a8f24d1d5705 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_be640c95e549592e66a9707fdfe9a329 = $(`<div id="html_be640c95e549592e66a9707fdfe9a329" style="width: 100.0%; height: 100.0%;">     <b>Mural of Alice Pasquini in Via del Pratello</b><br>     <i>Author:</i> ALice Pasquini<br>     <p>Alice depicted a girl with a bunch of colourful flowers in her hand, hiding part of her face behind the curtain, recalling that street art “is an art that stirs up controversy” and during her career there has certainly been no shortage of problems, but acknowledging that after all “it is the risk of signing one's name”.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work7</code>     </div>`)[0];
+                popup_9a68c5710849794fcb31a8f24d1d5705.setContent(html_be640c95e549592e66a9707fdfe9a329);
+            
+        
+
+        marker_64472154062a4e0981963afdaf8f74e7.bindPopup(popup_9a68c5710849794fcb31a8f24d1d5705)
+        ;
+
+        
+    
+    
+            marker_64472154062a4e0981963afdaf8f74e7.bindTooltip(
+                `<div>
+                     Mural of Alice Pasquini in Via del Pratello
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f122fa5d7719c71a6c0b19047b33873f = L.marker(
+                [44.485894340977886, 11.35276614473806],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_ad077ffa36416aae71662c483131d6a3 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_efbb0bb574f4dd360067725495fde3e2 = $(`<div id="html_efbb0bb574f4dd360067725495fde3e2" style="width: 100.0%; height: 100.0%;">     <b>Mural of Nemo in Via Orfeo</b><br>     <i>Author:</i> Nemo<br>     <p>The flaccid, grotesque and soft appearance with which Nemo's depicts its characters is ultimately intended as a critique of contemporary society, of the perfection and apparent immortality into which it projects us, heedless of the decadence of the human being and his contradictions that for thousands of years have led him to repeat the same mistakes over and over again.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work8</code>     </div>`)[0];
+                popup_ad077ffa36416aae71662c483131d6a3.setContent(html_efbb0bb574f4dd360067725495fde3e2);
+            
+        
+
+        marker_f122fa5d7719c71a6c0b19047b33873f.bindPopup(popup_ad077ffa36416aae71662c483131d6a3)
+        ;
+
+        
+    
+    
+            marker_f122fa5d7719c71a6c0b19047b33873f.bindTooltip(
+                `<div>
+                     Mural of Nemo in Via Orfeo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_869494c7efb3750a408b84c138bde7c7 = L.marker(
+                [44.503652, 11.340031],
+                {
+}
+            ).addTo(map_a63981fa7ca395737027cda6596a83e6);
+        
+    
+        var popup_db1b2b450c7e411551bdac213fcb6716 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_dcf93ce2da883c5d2c5775c098f71823 = $(`<div id="html_dcf93ce2da883c5d2c5775c098f71823" style="width: 100.0%; height: 100.0%;">     <b>Mural of Dado e Mambo in Via Milazzo 14</b><br>     <i>Author:</i> Mambo<br>     <p>This untitled mural was created in 2018 by Italian street artists Dado (Alessandro Ferri) and Mambo (Elvis Mambo Pregnolato). It is located on the exterior wall of the CISL (Italian Confederation of Workers' Trade Unions) headquarters on Via Milazzo in Bologna. The large-scale mural—approximately 50 meters wide and 12 meters high—uses red and green as dominant colors, echoing the identity of the union. The artwork features two women wearing safety helmets and a man with a mask and helmet, symbolizing labor and highlighting the importance of workers’ safety. Blending abstract style with figurative elements, the mural pays tribute to the working class and reflects the artists' commitment to merging street art with social themes.</p>     <code>https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl/item/work9</code>     </div>`)[0];
+                popup_db1b2b450c7e411551bdac213fcb6716.setContent(html_dcf93ce2da883c5d2c5775c098f71823);
+            
+        
+
+        marker_869494c7efb3750a408b84c138bde7c7.bindPopup(popup_db1b2b450c7e411551bdac213fcb6716)
+        ;
+
+        
+    
+    
+            marker_869494c7efb3750a408b84c138bde7c7.bindTooltip(
+                `<div>
+                     Mural of Dado e Mambo in Via Milazzo 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

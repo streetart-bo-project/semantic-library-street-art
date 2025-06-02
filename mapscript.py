@@ -3,27 +3,29 @@ from rdflib import Graph, Namespace, RDF, RDFS
 import re
 
 # 1. CARICA IL FILE .ttl
-ttl_path = "final-csv-ttl\final.ttl"
+ttl_path = "final-csv-ttl/final.ttl"  # Adatta questo percorso se necessario
 g = Graph()
 g.parse(ttl_path, format="turtle")
 
 # 2. DEFINISCI I NAMESPACE USATI NEL TTL
-CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
+CRM = Namespace("https://www.cidoc-crm.org/")
 SCHEMA = Namespace("https://schema.org/")
 DCTERMS = Namespace("http://purl.org/dc/terms/")
 RDFS_NS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 
-# 3. FUNZIONE PER SISTEMARE LE COORDINATE SCRITTE MALE
+# 3. FUNZIONE PER SISTEMARE LE COORDINATE
 def fix_coordinate(raw):
-    numbers = re.findall(r"\d+", str(raw))
-    if len(numbers) >= 2:
-        return float(numbers[0] + "." + numbers[1])
-    return None
+    try:
+        # Rimuove virgolette, tipi RDF, e cast a float
+        cleaned = re.sub(r'["<>^a-zA-Z:_]', '', str(raw)).strip()
+        return float(cleaned)
+    except:
+        return None
 
 # 4. ESTRAI TUTTI I METADATI PARTENDO DAGLI OGGETTI "item/workX"
 data = []
 
-for item_uri in g.subjects(RDF.type, CRM.E22_Man_Made_Object):
+for item_uri in g.subjects(RDF.type, CRM["E22_Man-Made_Object"]):
     title = None
     author = None
     description = None
@@ -31,7 +33,7 @@ for item_uri in g.subjects(RDF.type, CRM.E22_Man_Made_Object):
     lon = None
 
     # Titolo
-    for title_node in g.objects(item_uri, CRM.P102_has_title):
+    for title_node in g.objects(item_uri, CRM["P102_has_title"]):
         for label in g.objects(title_node, RDFS_NS.label):
             title = str(label).strip('"')
 
@@ -40,11 +42,11 @@ for item_uri in g.subjects(RDF.type, CRM.E22_Man_Made_Object):
         author = str(auth).split("/")[-1]
 
     # Descrizione
-    for note in g.objects(item_uri, CRM.P3_has_note):
+    for note in g.objects(item_uri, CRM["P3_has_note"]):
         description = str(note).strip('"')
 
     # Coordinate: via location → geo → lat/lon
-    for place in g.objects(item_uri, CRM.P53_has_former_or_current_location):
+    for place in g.objects(item_uri, CRM["P53_has_former_or_current_location"]):
         for geo in g.objects(place, SCHEMA.geo):
             for lat_value in g.objects(geo, SCHEMA.latitude):
                 lat = fix_coordinate(lat_value)
@@ -56,7 +58,7 @@ for item_uri in g.subjects(RDF.type, CRM.E22_Man_Made_Object):
         data.append({
             "title": title or "Untitled",
             "author": author or "Unknown",
-            "description": description or "",
+            "description": description or "No description",
             "lat": lat,
             "lon": lon,
             "uri": str(item_uri)
@@ -78,5 +80,9 @@ for item in data:
         tooltip=item['title']
     ).add_to(m)
 
-# 6. SALVA LA MAPPA HTML
+# 6. STAMPA DI DEBUG (facoltativa)
+print(f"Totale opere trovate: {len(data)}")
+
+# 7. SALVA LA MAPPA HTML
 m.save("street_art_bologna_from_ttl.html")
+print("✅ Mappa salvata come 'street_art_bologna_from_ttl.html'")
