@@ -28,8 +28,10 @@
 	<link rel="stylesheet" href="css/glightbox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Medio &mdash; Free Bootstrap 5 Website Template by Untree.co</title>
+	<title>Urban Ink Archive</title>
+
 </head>
+
 <body>
 
 	<div class="site-mobile-menu site-navbar-target">
@@ -62,18 +64,16 @@
 
 
 
-
 	<div class="hero v-h-full overlay">
 		<div class="img-bg rellax">
-			<img src="images/hero-2-min.jpg" alt="Image" class="img-fluid">
+			<img src="images/sfondo_2.jpg" alt="Image" class="img-fluid">
 		</div>
 		<div class="container">
 			<div class="row align-items-center v-h-full">
 
 				<div class="col-lg-7 col-xxl-6 mx-auto text-center">
 					<h1 class="heading-2 text-white mb-3" data-aos="fade-up">About Us</h1>
-					<p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-					<p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary-outline white me-4">Get in Touch</a></p>
+					<p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-4">The project</p>
 				</div>
 
 			</div>
@@ -84,38 +84,259 @@
 
 
 
-	<div class="section">
+	<div class="div">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 pe-lg-5" data-aos="fade-up">
-					<span class="subheading d-inline-block mb-2">We love to design</span>
-					<h2 class="mb-4">Far far away, behind the word mountains</h2>
-					<p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					<p><a href="#" class="btn btn-black">Get started</a></p>
-				</div>
-				<div class="col-lg-8">
-					<div class="row">
-						<div class="col-6 col-lg-6 mt-5" data-aos="fade-up" data-aos-delay="100">
-							<img src="images/img_v_5-min.jpg" alt="Image" class="img-fluid rounded">
-						</div>
-						<div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-							<img src="images/img_v_6-min.jpg" alt="Image" class="img-fluid rounded">
-						</div>
-					</div>
-				</div>
-			</div>
+			<nav>
+				<h2>Index</h2>
+				<ol>
+					<li><a href="#introduction">Introduction</a></li>
+					<li>
+					<a href="#project-overview">Project overview</a>
+					<ol>
+						<li><a href="#project-objectives">Project objectives</a></li>
+						<li><a href="#why-bologna"> Why street art in Bologna</a></li>
+					</ol>
+					</li>
+					<li><a href="#artworks-metadata"> Artworks and Metadata</a></li>
+					<li>
+					<a href="#knowledge-modeling">Knowledge Organization and Modeling</a>
+					<ol>
+						<li><a href="#conceptual-map">Conceptual Map (Natural Language)</a></li>
+						<li><a href="#er-model">Entity-Relationship (E/R) Model</a></li>
+						<li><a href="#ontological-model">Ontological Conceptual Model</a></li>
+					</ol>
+					</li>
+					<li><a href="#rdf-serialization">Data Conversion and RDF Serialization</a></li>
+					<li><a href="#platform">The platform</a></li>
+					<li><a href="#tools">Tools used</a></li>
+					<li><a href="#conclusion">Conclusion</a></li>
+					<li><a href="#sitography">Bibliography and Sitography</a></li>
+				</ol>
+			</nav>
 		</div>
 	</div>
 
 
-	<div class="section pt-0 mb-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7">
-					<span class="subheading d-inline-block mb-2">Team</span>
-					<h2 class="mb-4">Meet Our Team</h2>
-				</div>
+	<main>
+	<!--INTRO-->
+		<div id="introduction">
+      		<h2>1. Introduction</h2>
+      		<p>
+				Urban Ink Archive is a digital project aimed at <b>documenting, preserving, and semantically exploring</b> urban graffiti in the city of Bologna. It focuses on creating a <b>digital catalogue</b> of street art using semantic web technologies and cultural heritage ontologies. <br><br>
+				Although the project initially concentrates on murals located in Bologna, its scope could be expanded in future developments to include street art from other contexts. The use of ontologies for conceptual modelling and knowledge graphs for data interconnection enhances adherence to FAIR principles and reproducibility, enabling machine-actionable Linked Open Data (LOD). <br><br>
+				The platform supports an accessible web interface, allowing users to <b>filter artworks </b> based on conceptual relationships and view them on an <b>interactive map</b>. This makes the project useful for both experts and non-experts, enhancing the visibility and understanding of street art as a form of contemporary cultural expression.
+      		</p>
+    	</div>
+	<!--PROJECT OVERVIEW-->
+		<div id="project-overview">
+	  		<h2>2. Project Overview</h2>
+			<div id="project-objectives">
+				<h3>Project Objectives</h3>
+				<p> The main goals of Urban Ink Archive are:
+					<ul>
+						<li>
+							To build a digital catalogue of urban graffiti in Bologna.
+						</li>
+						<li>
+							To apply semantic web technologies for structured and enhanced data representation.
+						</li>
+						<li>
+							To ensure interoperability through Linked Open Data (LOD) standards.
+						</li>
+						<li>
+							To offer a user-friendly interface with semantic filtering and navigation.
+						</li>
+						<li>
+							To promote public engagement and scholarly research on street art.
+						</li>
+					</ul>
+				</p>
 			</div>
+
+			<div id="why-bologna">
+				<h3>Why Street Art in Bologna</h3>
+				<p>
+					We chose to focus on Bologna because this is the city where we live and study. The local street art scene is rich and historically tied to Bologna’s political and cultural context. Despite its cultural significance, urban art is often under-documented. <br> Our project contributes to recognizing it as part of the city’s intangible cultural heritage and provides a structured platform for its exploration and study.
+				</p>
+
+			</div>
+		</div>
+	
+	<!--ARTWORKS AND METADATA-->
+		<div id="artworks-metadata">
+			<h2>3. Artworks and Metadata</h2>
+			<p>
+				We curated a selection of murals and defined <b>essential metadata</b> for each artwork, including:
+				<ul>
+					<li>Title</li>
+					<li>Author</li>
+					<li>Year of creation</li>
+					<li>Location</li>
+					<li>Support</li>
+					<li>Description</li>
+					<li>Current condition</li>
+					<li>Subject of the artwork</li>
+					<li>Theme of the artwork</li>
+				</ul>
+			</p>
+
+			<p>
+				Each artwork was given a unique ID and a human-readable label in the format:
+				<b>“Mural of [Author] in [Street Name] ([title status])”</b>, accounting for the fact that most street art pieces lack formal titles.
+
+			</p>
+
+		</div>
+
+	<!--KNOWLEDGE ORGANIZAION AND MODELING-->
+		<div id="knowledge-modeling">
+			<h2>4. Knowledge Organization and Modelling</h2>
+			<div id="conceptual-map">
+				<h3>Step 1: Conceptual Map (Natural Language)</h3>
+				<p>
+					We began by visualizing the data as conceptual map in <b>natural language</b>, representing real metadata of the artworks such as authors, places, and subjects. A color-coded system was used to distinguish the metadata:
+					<ul>
+						<li>
+							<b style="background-color: #fff9c4; padding: 2px 6px; border-radius: 3px;">Light yellow</b>: identifier 
+						</li>
+						<li>
+							<b style="background-color: #ffe082; padding: 2px 6px; border-radius: 3px;">Ochre yellow</b>: title
+						</li>
+						<li>
+							<b style="background-color: #f8bbd0; padding: 2px 6px; border-radius: 3px;">Pink</b>: place (street name and coordinates)
+						</li>
+						<li>
+							<b style="background-color: #a5d6a7; padding: 2px 6px; border-radius: 3px;">Green</b>: author
+						</li>
+						<li>
+							<b style="background-color: #b2ebf2; padding: 2px 6px; border-radius: 3px;">Soft cyan</b>: subject represented in the artwork
+						</li>
+						<li>
+							<b style="background-color: #81d4fa; padding: 2px 6px; border-radius: 3px;">Light blue</b>: theme expressed by the artwork
+						</li>
+						<li>
+							<b style="background-color: #ce93d8; padding: 2px 6px; border-radius: 3px;">Violet</b>: date of creation
+						</li>
+						<li>
+							<b style="background-color: #ba68c8; padding: 2px 6px; border-radius: 3px;">Purple</b>: description of the artwork
+						</li>
+						<li>
+							<b style="background-color: #dcedc8; padding: 2px 6px; border-radius: 3px;">Light green</b>: current state of the artwork
+						</li>
+						<li>
+							<b style="background-color: #388e3c; color: #fff; padding: 2px 6px; border-radius: 3px;">Dark green</b>: support (e.g., wall, gate)
+						</li>
+					</ul>
+				</p>
+			</div>
+			<div id="er-model">
+				<h3>Step 2: Entity-Relationship (E/R) Model</h3>
+				<p>
+					We translated the conceptual maps into an E/R model, providing a formal schema that defines the entities (e.g., “Artwork”, “Place”, “Subject”) and the relationships between them. This served as a bridge toward semantic modelling.
+				</p>
+			</div>
+			<div id="ontological-model">
+				<h3>Step 3: Ontological Conceptual Model</h3>
+				<p>
+					We adopted a semantic web approach using <b>established ontologies</b>, such as:
+					<ul>
+						<li>
+							<b>CIDOC CRM</b>: for cultural heritage data representation.
+						</li>
+						<li>
+							<b>GETTY AAT</b>: vocabulary for classifying subjects and visual motifs (e.g., “human figure”, “graffiti”, “wall painting”)
+						</li>
+						<li>
+							<b>Dublin Core (DC Terms) and Schema.org</b>: for general metadata compatibility.
+						</li>
+				</p>
+
+				<p>
+					We introduced a custom ontology called <b>Strart</b> (a crasis of Street Art) to define elements not covered by standard vocabularies. <br>
+					Notably, we differentiated between <b>“Subject”</b> and <b>“Theme”</b>:
+						<ul>
+							<li>
+								<b>strart:Visual_Subject</b>: the visual elements depicted in the artwork (e.g., a person, an animal, a symbol).
+							</li>
+							<li>
+								<b>strart:Conceptual_Theme</b>: the broader concept or message conveyed by the artwork (e.g., social justice, environmental awareness, cultural identity).
+							</li>
+						</ul>
+					Both are subclasses of <b>crm:E28_Conceptual_Object.</b>
+				</p>
+			</div>
+		</div>
+
+	<!--DATA CONVERSION AND RDF SERIALIZATION-->
+		<div id="rdf-serialization">
+			<h2>5. Data Conversion and RDF Serialization</h2>
+			<p>
+				We compiled all mural metadata in a <b>CSV file</b>, which was then transformed into <b>RDF triples</b> using a <b>Python script</b>. This script extracts subject–predicate–object triples from the CSV and populates a graph, which is finally serialized into a <b>Turtle (.ttl) file</b>.
+			</p>
+		</div>
+
+	<!--THE PLATFORM-->
+		<div id="platform">
+			<h2>6. The Platform</h2>
+			<p>
+				The Urban Ink Archive website acts as both a visual gallery and a semantic interface. <br>
+				It offers a browsable collection of murals, that can be semantically filtered. An interactive digital map for geolocating murals and the access to structured data based on ontologies. <br>
+				All graffiti artworks can be explored in detail, starting from high-resolution images that allow users to appreciate their visual elements and styles. Each image is accompanied by its main data and descriptive metadata, providing insight into the content and context of the work. <br>
+				Users can apply filters to explore relationships among artworks, discovering which ones share similar themes or recurring subjects. This functionality enables a deeper and more meaningful navigation of the archive. <br>
+				Thanks to the interactive map, users can also view the exact location of each mural within the city of Bologna. The use of precise geocoordinates ensures accurate positioning and reinforces the spatial context of each artwork.
+			</p>
+		</div>	
+
+	<!--TOOLS USED-->
+		<div id="tools">
+			<h2>7. Tools Used</h2>
+			<p>
+				<ul>
+					<li>
+						<b>XMind</b>: for creating the maps 
+					</li>
+					<li> 
+						<b>Python</b>: for data processing and RDF serialization
+					</li>
+				</ul>
+			</p>
+		</div>
+
+
+	<!--CONCLUSION-->
+		<div id="conclusion">
+			<h2>8. Conclusion</h2>
+			<p>
+				Urban Ink Archive is a cultural heritage initiative. By combining semantic technologies with an accessible digital platform, it brings visibility to street art and contributes to its long-term preservation. Through ontologies and structured data, we offer new ways of engaging with urban visual culture, promoting scholarly exploration and public appreciation.
+			</p>
+		</div>
+	<!--SITOGRAPHY-->
+		<div id="sitography">
+			<h2>9. Bibliography and Sitography</h2>
+			<p>
+				<ul>
+					<li><a href="https://www.andreco.org/portfolio/philosophical-tree/?lang=it" target="_blank">Andreco, <em>Philosophical Tree</em></a></li>
+					<li><a href="https://www.pressreader.com/italy/corriere-di-bologna/20200723/281500753569708" target="_blank">Corriere di Bologna, “La nuova opera di Ericailcane e Bastardilla al Pratello”</a></li>
+					<li><a href="https://zero.eu/it/news/la-nuova-opera-di-ericailcane-e-bastardilla-al-pratello/" target="_blank">Zero.eu, <em>La nuova opera di Ericailcane e Bastardilla al Pratello</em></a></li>
+					<li><a href="https://www.art-vibes.com/street-art/collettivo-fx-le-lacrime-della-giustizia-dumbo-bologna/" target="_blank">Art Vibes, <em>Collettivo FX – Le lacrime della giustizia, DumBO, Bologna</em></a></li>
+					<li><a href="https://www.orticanoodles.com/2017_irma_bandiera_cheap_festival/" target="_blank">Orticanoodles, <em>Irma Bandiera – Cheap Festival</em></a></li>
+					<li><a href="https://www.bibliotecasalaborsa.it/bolognaonline/events/il_murale_500_anni_dalla_conquista_dellamerica_di_luiz_gutierrez" target="_blank">Biblioteca Salaborsa, <em>Il murale "500 anni dalla conquista dell’America" di Luiz Gutiérrez</em></a></li>
+					<li><a href="https://www.facebook.com/story.php?story_fbid=1193419727513777&id=100049901513529" target="_blank">Facebook – <em>Luiz Gutiérrez – Murale 500 anni dalla conquista dell’America</em></a></li>
+					<li><a href="https://www.alicepasquini.com/portfolio/bologna-it" target="_blank">Alice Pasquini – Portfolio Bologna</a></li>
+					<li><a href="https://ilgorgo.com/nemos-new-mural-labas-bologna/" target="_blank">Il Gorgo – <em>Nemo’s new mural @ Làbas Bologna</em></a></li>
+					<li><a href="https://www.flashgiovani.it/node/165" target="_blank">Flashgiovani Bologna</a></li>
+					<li><a href="https://ilgorgo.com/bastardilla-new-mural-for-frontier-in-bologna/" target="_blank">Il Gorgo – <em>Bastardilla: new mural for Frontier in Bologna</em></a></li>
+					<li><a href="https://www.bolognatoday.it/cronaca/murales-cisl-via-milazzo-dado-mambo.html" target="_blank">BolognaToday – <em>Murales Cisl via Milazzo, Dado e Mambo</em></a></li>
+					<li><a href="https://www.internazionale.it/weekend/paola-soriga/2015/02/22/amp/mi-sono-innamorata-di-blu-lo-street-artist-inafferrabile" target="_blank">Internazionale, <em>Mi sono innamorata di Blu, lo street artist inafferrabile</em></a></li>
+				</ul>
+			</p>
+		</div>
+	</main>
+
+	<div class="div div-contact m-md-5 px-md-5 mt-5">
+		<div class="container">
+			<h2>Team Members</h2>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, exercitationem!</p>
 
 			<div class="row">
 				<div class="col-lg-3">
@@ -142,42 +363,7 @@
 						<p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 					</a>
 				</div>
-				<div class="col-lg-3">
-					<a href="#" class="grayscale">
-						<img src="images/person_4.jpg" alt="Image" class="img-fluid mb-4">
-						<span class="subheading d-inline-block">CEO, Co-Founder</span>
-						<h3 class="h5 mb-3">Matthew Madron</h3>
-						<p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					</a>
-				</div>
 			</div>
-		</div>
-	</div>
-
-	<div class="section section-contact m-md-5 px-md-5 mt-5">
-		<div class="container">
-			<h2>Subscribe to Newsletter</h2>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, exercitationem!</p>
-
-			<form action="" class="form-contact">
-				<div class="row">
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your name">
-						</div>	
-					</div>
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Your email">
-						</div>
-					</div>
-
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<input type="submit" class="btn btn-black btn-block" value="Subscribe">
-					</div>
-
-				</div>
-			</form>
 		</div>	
 	</div>
 
