@@ -1,5 +1,6 @@
 import folium
 from rdflib import Graph, Namespace, RDF, RDFS
+from folium.plugins import Search
 import re
 
 # carico file .ttl
@@ -41,6 +42,8 @@ for item_uri in g.subjects(RDF.type, CRM["E22_Man-Made_Object"]):
     condition = None
     work_id = item_uri.split("/")[-1]  # estrae 'work1'
     image = f"https://github.com/streetart-bo-project/semantic-library-street-art/raw/main/website/img/{work_id}.jpg"
+    
+
 
     # Titolo
     for title_node in g.objects(item_uri, CRM.P102_has_title):
@@ -49,7 +52,13 @@ for item_uri in g.subjects(RDF.type, CRM["E22_Man-Made_Object"]):
 
     # Autore
     for auth in g.objects(item_uri, DCTERMS.creator):
-        authors.append(str(auth).split("/")[-1].strip('_'))
+        name = str(auth).split("/")[-1]  # estrae "ALice_Pasquini"
+        name = name.replace("_", " ").title().strip()
+        authors.append(name)
+
+    author_id = authors[0].lower().replace(" ", "_")  # usa il primo autore
+    catalog_url = f"https://github.com/streetart-bo-project/semantic-library-street-art/blob/main/website/{author_id}.html"
+
 
     # Descrizione
     for note in g.objects(item_uri, CRM.P3_has_note):
@@ -127,6 +136,9 @@ for item_uri in g.subjects(RDF.type, CRM["E22_Man-Made_Object"]):
 
 # creazione mappa con folium
 m = folium.Map(location=[44.4949, 11.3426], zoom_start=13)
+marker_group = folium.FeatureGroup(name="Artworks")
+m.add_child(marker_group)
+marker_lookup = {}
 
 for item in data:
     popup_html = f"""
@@ -141,16 +153,24 @@ for item in data:
     <b>Support:</b> {item['support']}<br>
     <b>Condition:</b> {item['condition']}<br>
     <p>{item['description']}</p>
+    <b><a href="{catalog_url}" target="_blank">🔗 View details</a></b><br>
     """
-    folium.Marker(
+    marker = folium.Marker(
         location=[item['lat'], item['lon']],
         popup=folium.Popup(popup_html, max_width=400),
         tooltip=item['title']
-    ).add_to(m)
+    )
+    marker.add_to(marker_group)
+    marker_lookup[item['title']] = marker
 
-# 6. STAMPA DI DEBUG (facoltativa)
-print(f"Totale opere trovate: {len(data)}")
+# Aggiungi la ricerca
+Search(
+    layer=marker_group,
+    search_label='title',
+    search_zoom=16,
+    placeholder='Search mural title...',
+    collapsed=False
+).add_to(m)
 
-# 7. SALVA LA MAPPA HTML
+
 m.save("street_art_bologna_from_ttl.html")
-print("✅ Mappa salvata come 'street_art_bologna_from_ttl.html'")
