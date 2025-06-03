@@ -2,6 +2,7 @@ import folium
 from rdflib import Graph, Namespace, RDF, RDFS
 from folium.plugins import Search
 import re
+from folium.plugins import Fullscreen
 
 # carico file .ttl
 ttl_path = "final-csv-ttl/final(1).ttl"  # Adatta questo percorso se necessario
@@ -41,7 +42,8 @@ for item_uri in g.subjects(RDF.type, CRM["E22_Man-Made_Object"]):
     support = None
     condition = None
     work_id = item_uri.split("/")[-1]  # estrae 'work1'
-    image = f"https://github.com/streetart-bo-project/semantic-library-street-art/raw/main/website/img/{work_id}.jpg"
+    image =  image = f"website/img/{work_id}.jpg" #f"https://github.com/streetart-bo-project/semantic-library-street-art/raw/main/website/img/{work_id}.jpg"
+
     
 
 
@@ -57,7 +59,9 @@ for item_uri in g.subjects(RDF.type, CRM["E22_Man-Made_Object"]):
         authors.append(name)
 
     author_id = authors[0].lower().replace(" ", "_")  # usa il primo autore
-    catalog_url = f"https://github.com/streetart-bo-project/semantic-library-street-art/blob/main/website/{author_id}.html"
+    catalog_url = f"website/{author_id}.html" #f"https://github.com/streetart-bo-project/semantic-library-street-art/raw/main/website/{author_id}.html"
+
+
 
 
     # Descrizione
@@ -135,13 +139,15 @@ for item_uri in g.subjects(RDF.type, CRM["E22_Man-Made_Object"]):
         })
 
 # creazione mappa con folium
-m = folium.Map(location=[44.4949, 11.3426], zoom_start=13)
+m = folium.Map(location=[44.4949, 11.3426], zoom_start=13.5,  tiles='CartoDB positron') 
+Fullscreen().add_to(m)
 marker_group = folium.FeatureGroup(name="Artworks")
 m.add_child(marker_group)
 marker_lookup = {}
 
 for item in data:
     popup_html = f"""
+    <div style="font-family: 'Roboto', sans-serif; font-size: 11px; border-radius: 8px;">
     <b>{item['title']}</b><br>
     <img src="{item['image']}" width="200"><br>
     <br>
@@ -155,8 +161,10 @@ for item in data:
     <p>{item['description']}</p>
     <b><a href="{catalog_url}" target="_blank">🔗 View details</a></b><br>
     """
+    icon = folium.Icon(icon="paint-brush", prefix="fa", color="blue")  # usa FontAwesome
     marker = folium.Marker(
         location=[item['lat'], item['lon']],
+        icon=icon,
         popup=folium.Popup(popup_html, max_width=400),
         tooltip=item['title']
     )
