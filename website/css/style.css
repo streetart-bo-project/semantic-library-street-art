@@ -462,8 +462,10 @@ progress {
     content: "\2014\00A0"; }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto; }
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -9052,7 +9054,7 @@ a {
     color: #000; }
 
 .hero, .bg-image {
-  background-color: #000;
+  background-color: #f0f0f0;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
