@@ -2,18 +2,20 @@ import folium
 from rdflib import Graph, Namespace, RDF, RDFS
 import re
 
-# 1. CARICA IL FILE .ttl
-ttl_path = "final-csv-ttl/final.ttl"  # Adatta questo percorso se necessario
+# carico file .ttl
+ttl_path = "final-csv-ttl/final(1).ttl"  # Adatta questo percorso se necessario
 g = Graph()
 g.parse(ttl_path, format="turtle")
 
-# 2. DEFINISCI I NAMESPACE USATI NEL TTL
+#definisco i namespace del ttl
 CRM = Namespace("https://www.cidoc-crm.org/")
 SCHEMA = Namespace("https://schema.org/")
 DCTERMS = Namespace("http://purl.org/dc/terms/")
 RDFS_NS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
+STRART = Namespace("https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/main/final.ttl#")
 
-# 3. FUNZIONE PER SISTEMARE LE COORDINATE
+
+#coordinate latitude-longitude
 def fix_coordinate(raw):
     try:
         # Rimuove virgolette, tipi RDF, e cast a float
@@ -22,57 +24,123 @@ def fix_coordinate(raw):
     except:
         return None
 
-# 4. ESTRAI TUTTI I METADATI PARTENDO DAGLI OGGETTI "item/workX"
+# estraggo i metadati dagli items- "item/workX"
 data = []
 
 for item_uri in g.subjects(RDF.type, CRM["E22_Man-Made_Object"]):
     title = None
-    author = None
+    authors = []
     description = None
     lat = None
     lon = None
+    place = None
+    subject = None
+    theme = None
+    date = None
+    support = None
+    condition = None
+    work_id = item_uri.split("/")[-1]  # estrae 'work1'
+    image = f"https://github.com/streetart-bo-project/semantic-library-street-art/raw/main/website/img/{work_id}.jpg"
 
     # Titolo
-    for title_node in g.objects(item_uri, CRM["P102_has_title"]):
+    for title_node in g.objects(item_uri, CRM.P102_has_title):
         for label in g.objects(title_node, RDFS_NS.label):
             title = str(label).strip('"')
 
     # Autore
     for auth in g.objects(item_uri, DCTERMS.creator):
-        author = str(auth).split("/")[-1]
+        authors.append(str(auth).split("/")[-1].strip('_'))
 
     # Descrizione
-    for note in g.objects(item_uri, CRM["P3_has_note"]):
+    for note in g.objects(item_uri, CRM.P3_has_note):
         description = str(note).strip('"')
 
     # Coordinate: via location → geo → lat/lon
-    for place in g.objects(item_uri, CRM["P53_has_former_or_current_location"]):
-        for geo in g.objects(place, SCHEMA.geo):
+    for place_node in g.objects(item_uri, CRM.P53_has_former_or_current_location):
+        for label in g.objects(place_node, RDFS_NS.label):
+            place = str(label).strip('"')
+        for geo in g.objects(place_node, SCHEMA.geo):
             for lat_value in g.objects(geo, SCHEMA.latitude):
                 lat = fix_coordinate(lat_value)
             for lon_value in g.objects(geo, SCHEMA.longitude):
                 lon = fix_coordinate(lon_value)
 
+    #subject
+    # subject
+    for subj in g.objects(item_uri, CRM.P129_is_about):
+        label_found = False
+    for label in g.objects(subj, RDFS_NS.label):
+        subject = str(label)
+        label_found = True
+    if not label_found:
+        subject = str(subj).split("/")[-1].replace("_", " ")
+
+
+    #theme
+    for them in g.objects(item_uri, CRM.P138_represents):
+        label_found = False
+    for label in g.objects(subj, RDFS_NS.label):
+        theme = str(label)
+        label_found = True
+    if not label_found:
+        theme = str(them).split("/")[-1].replace("_", " ")
+        
+    #date
+    for date_value in g.objects(item_uri, SCHEMA.dateCreated):
+        date = str(date_value)
+
+    #support
+    for supp in g.objects(item_uri, CRM.P46_forms_part_of):
+        label_found = False
+    for label in g.objects(subj, RDFS_NS.label):
+        support = str(label)
+        label_found = True
+    if not label_found:
+        support = str(supp).split("/")[-1].replace("_", " ")
+
+    #condition
+    for cond in g.objects(item_uri, CRM.P44_has_condition):
+        label_found = False
+    for label in g.objects(subj, RDFS_NS.label):
+        condition = str(label)
+        label_found = True
+    if not label_found:
+        condition = str(cond).split("/")[-1].replace("_", " ")
+    
+
     # Se coordinate valide, salva i dati
     if lat and lon:
         data.append({
             "title": title or "Untitled",
-            "author": author or "Unknown",
+            "authors": ", ".join(authors) if authors else "Unknown",
             "description": description or "No description",
             "lat": lat,
             "lon": lon,
-            "uri": str(item_uri)
+            "place": place or "",
+            "subject": subject or "",
+            "theme": theme or "",
+            "date": date or "",
+            "support": support or "",
+            "condition": condition or "",
+            "image": image or ""
         })
 
-# 5. CREA LA MAPPA CON FOLIUM
+# creazione mappa con folium
 m = folium.Map(location=[44.4949, 11.3426], zoom_start=13)
 
 for item in data:
     popup_html = f"""
     <b>{item['title']}</b><br>
-    <i>Author:</i> {item['author']}<br>
+    <img src="{item['image']}" width="200"><br>
+    <br>
+    <b>Author:</b> {item['authors']}<br>
+    <b>Place:</b> {item['place']}<br>
+    <b>Subject:</b> {item['subject']}<br>
+    <b>Theme:</b> {item['theme']}<br>
+    <b>Date:</b> {item['date']}<br>
+    <b>Support:</b> {item['support']}<br>
+    <b>Condition:</b> {item['condition']}<br>
     <p>{item['description']}</p>
-    <code>{item['uri']}</code>
     """
     folium.Marker(
         location=[item['lat'], item['lon']],
