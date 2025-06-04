@@ -8973,7 +8973,7 @@ textarea.form-control-lg {
   cursor: pointer;
   position: relative; }
   .burger.light:before, .burger.light span, .burger.light:after {
-    background: #fff; }
+    background: #7a2525; }
 
 .burger:before, .burger span, .burger:after {
   width: 100%;
