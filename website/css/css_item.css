@@ -461,6 +461,9 @@ table tr:nth-child(4) td, table tr:nth-child(4) th {
 table tr:nth-child(5) td, table tr:nth-child(5) th {
     border-bottom: 1.5px solid #e36fc0;
 }
+table tr:nth-child(6) td, table tr:nth-child(6) th {
+    border-bottom: 1.5px solid #f0dab3;
+}
 
 
 
