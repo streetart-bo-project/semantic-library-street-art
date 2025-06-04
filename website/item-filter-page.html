@@ -1,257 +1,330 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Streetart collection Page</title>
-  <link rel="stylesheet" href="item-filter-page.css"> 
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/feather/style.css">
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/img.css">
+	<link rel="stylesheet" href="css/css_item.css">
+  <link rel="stylesheet" href="css/item-filter-page.css">
+
+	<title>Urban Ink Archive</title>
 </head>
 
-<div class="filters">
-  <select id="creatorFilter">
-    <option value="">All Creators</option>
-    <option value="Alice_Pasquini">Alice_Pasquini</option>
-    <option value="ANDRECO">ANDRECO</option>
-    <option value="Blu">Blu</option>
-    <option value="Collettivo_FX">Collettivo FX</option>
-    <option value="Dado">Dado</option>
-    <option value="Ericailcane">Ericailcane</option>
-    <option value="Ericailcane">Bastardilla</option>
-    <option value="Etnik">Etnik</option>
-    <option value="Honet">Honet</option>
-    <option value="Luis_gutierrez">Luis_gutierrez</option>
-    <option value="Mambo">Mambo</option>
-    <option value="Nemo">Nemo</option>
-    <option value="Orticanoodles">Orticanoodles</option> 
-  </select>
 
-  <select id="themeFilter">
-    <option value="">All Themes</option>
-    <option value="environment">Environment</option>
-    <option value="history">History</option>
-    <option value="identity">Identity</option>
-    <option value="social_issue">Social Issue</option>
-  </select>
+<body>
 
-  <select id="subjectFilter">
-    <option value="">All Subjects</option>
-    <option value="animal">Animal</option>
-    <option value="city">City</option>
-    <option value="geometric_shapes">Geometric Shapes</option>
-    <option value="human_figure">Human Figure</option>
-    <option value="nature">Nature</option>
-  </select>
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
 
-  <select id="conditionFilter">
-    <option value="">All Conditions</option>
-    <option value="destroyed">Destroyed</option>
-    <option value="visible">Visible</option>
-  </select>
+	<nav class="site-nav">
+		<div class="container">
+			<div class="site-navigation">
 
-  <select id="supportFilter">
-    <option value="">All Supports</option>
-    <option value="gate">Gate</option>
-    <option value="wall">Wall</option>
-  </select>
-</div>
+				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+					<li class="active"><a href="../index.html">Home</a></li>
+					<li><a href="map.html">Map</a></li>
+          <li><a href="item-filter-page.html">Explore</a></li>
+					<li><a href="andreco.html">Items</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
 
-    
-<div class="collection-container">
- <div class="gallery-container">
-  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/andreco.html"
-          subject="nature"
-          creator="ANDRECO"
-          condition="visible"
-          theme="environment"
-          support="wall">
-    <div class="image-overlay">
-      <img src="https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/refs/heads/main/website/images/work1.jpg" alt="item-1">
-      <div class="collection-info">
-         <h5>
-          Mural of ANDRECO in Via dello Scalo 32
-         </h5>
+				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+  
+  <div class="filters">
+    <select id="creatorFilter">
+      <option value="">All Creators</option>
+      <option value="Alice_Pasquini">Alice_Pasquini</option>
+      <option value="ANDRECO">ANDRECO</option>
+      <option value="Blu">Blu</option>
+      <option value="Collettivo_FX">Collettivo FX</option>
+      <option value="Dado">Dado</option>
+      <option value="Ericailcane">Ericailcane</option>
+      <option value="Ericailcane">Bastardilla</option>
+      <option value="Etnik">Etnik</option>
+      <option value="Honet">Honet</option>
+      <option value="Luis_gutierrez">Luis_gutierrez</option>
+      <option value="Mambo">Mambo</option>
+      <option value="Nemo">Nemo</option>
+      <option value="Orticanoodles">Orticanoodles</option> 
+    </select>
+
+    <select id="themeFilter">
+      <option value="">All Themes</option>
+      <option value="environment">Environment</option>
+      <option value="history">History</option>
+      <option value="identity">Identity</option>
+      <option value="social_issue">Social Issue</option>
+    </select>
+
+    <select id="subjectFilter">
+      <option value="">All Subjects</option>
+      <option value="animal">Animal</option>
+      <option value="city">City</option>
+      <option value="geometric_shapes">Geometric Shapes</option>
+      <option value="human_figure">Human Figure</option>
+      <option value="nature">Nature</option>
+    </select>
+
+    <select id="conditionFilter">
+      <option value="">All Conditions</option>
+      <option value="destroyed">Destroyed</option>
+      <option value="visible">Visible</option>
+    </select>
+
+    <select id="supportFilter">
+      <option value="">All Supports</option>
+      <option value="gate">Gate</option>
+      <option value="wall">Wall</option>
+    </select>
+  </div>
+
+      
+  <div class="collection-container">
+  <div class="gallery-container">
+    <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/andreco.html"
+            subject="nature"
+            creator="ANDRECO"
+            condition="visible"
+            theme="environment"
+            support="wall">
+      <div class="image-overlay">
+        <img src="https://raw.githubusercontent.com/streetart-bo-project/semantic-library-street-art/refs/heads/main/website/images/work1.jpg" alt="item-1">
+        <div class="collection-info">
+          <h5>
+            Mural of ANDRECO in Via dello Scalo 32
+          </h5>
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
 
-  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/Ericailcane_Bastardilla.html"
-           subject="animal human_figure"
-           creator="Ericailcane Bastardilla"
-           condition="visible"
-           theme="social_issue"
-           support="wall gate"
-           >
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work2.jpg" alt="item-2">
-      <div class="collection-info">
-        <h5>
-          Mural of Ericailcane and Bastardilla in Via del Pratello
-        </h5>
+    <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/Ericailcane_Bastardilla.html"
+            subject="animal human_figure"
+            creator="Ericailcane Bastardilla"
+            condition="visible"
+            theme="social_issue"
+            support="wall gate"
+            >
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work2.jpg" alt="item-2">
+        <div class="collection-info">
+          <h5>
+            Mural of Ericailcane and Bastardilla in Via del Pratello
+          </h5>
+        </div>
       </div>
-    </div>
-  </a>
- 
-  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/collettivoFX.html"
-           subject="human_figure"
-           creator="Collettivo_FX"
-           condition="visible"
-           theme="social_issue history"
-           support="wall">
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work3.jpg" alt="item-3">
-      <div class="collection-info">
-        <h5> 
-          Mural of Collettivo FX in Dumbo
-        </h5>
+    </a>
+  
+    <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/collettivoFX.html"
+            subject="human_figure"
+            creator="Collettivo_FX"
+            condition="visible"
+            theme="social_issue history"
+            support="wall">
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work3.jpg" alt="item-3">
+        <div class="collection-info">
+          <h5> 
+            Mural of Collettivo FX in Dumbo
+          </h5>
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
 
-  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/orticanoodles.html"
-           subject="human_figure"
-           creator="Orticanoodles"
-           condition="visible"
-           theme="social_issue history"
-           support="wall">
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work4_cut.jpg" alt="item-4">
-      <div class="collection-info">
-        <h5>
-          Mural of Orticanoodles in via Turati 84
-        </h5>
+    <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/orticanoodles.html"
+            subject="human_figure"
+            creator="Orticanoodles"
+            condition="visible"
+            theme="social_issue history"
+            support="wall">
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work4_cut.jpg" alt="item-4">
+        <div class="collection-info">
+          <h5>
+            Mural of Orticanoodles in via Turati 84
+          </h5>
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
 
- <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/luis_gutierrez.html"
-           subject="human_figure"
-           creator="Luis_gutierrez"
-           condition="visible"
-           theme="history"
-           support="wall"> 
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work5.jpg" alt="item-5">
-      <div class="collection-info">
-        <h5>
-          Mural of Luis Gutierrez in Via Zamboni
-        </h5>
+  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/luis_gutierrez.html"
+            subject="human_figure"
+            creator="Luis_gutierrez"
+            condition="visible"
+            theme="history"
+            support="wall"> 
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work5.jpg" alt="item-5">
+        <div class="collection-info">
+          <h5>
+            Mural of Luis Gutierrez in Via Zamboni
+          </h5>
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
 
- <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/honet.html"
-           subject="animal"
-           creator="Honet"
-           condition="visible"
-           theme="history social_issue"
-           support="wall">
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work6.jpg" alt="item-6">
-      <div class="collection-info">
-        <h5>
-          Mural of Honet in via del Lavoro 18
-        </h5>
+  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/honet.html"
+            subject="animal"
+            creator="Honet"
+            condition="visible"
+            theme="history social_issue"
+            support="wall">
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work6.jpg" alt="item-6">
+        <div class="collection-info">
+          <h5>
+            Mural of Honet in via del Lavoro 18
+          </h5>
+          
+        </div>
+      </div>
+    </a>
+
+  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/alice_pasquini.html"
+            subject="human_figure"
+            creator="Alice_Pasquini"
+            condition="visible"
+            theme="identity"
+            support="gate">
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work7.jpg" alt="item-7">
+        <div class="collection-info">
+          <h5>
+            Mural of Alice Pasquini in Via del Pratello
+          </h5>
+        </div>
+      </div>
+    </a>
+
+  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/nemo.html"
+            subject="human_figure"
+            creator="Nemo"
+            condition="visible"
+            theme="social_issue"
+            support="wall">
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work8.jpg" alt="item-8">
+        <div class="collection-info">
+          <h5>
+            Mural of Nemo in Via Orfeo
+          </h5>
+        </div>
+      </div>
+    </a>
+
+  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/dado_mambo.html"
+            subject="geometric_shapes"
+            creator="Dado Mambo"
+            condition="visible"
+            theme="environment"
+            support="wall">
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work9.jpg" alt="item-9">
+        <div class="collection-info">
+          <h5>
+            Mural of Dado e Mambo in Via Milazzo 14
+          </h5>
+        </div>
+      </div>
+    </a>
+
+  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/bastardilla.html"
+            subject="human_figure"
+            creator="Bastardilla"
+            condition="visible"
+            theme="social_issue"
+            support="wall">
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work10.jpg" alt="item-10">
+        <div class="collection-info">
+          <h5>
+            Mural of Bastardilla in Via Tolmino 9
+          </h5>
+        </div>
+      </div>
+    </a>
+
+  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/etnik.html"
+            subject="geometric_shapes"
+            creator="Etnik"
+            condition="visible"
+            theme="environment"
+            support="wall">
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work11_cut.jpg" alt="item-11">
+        <div class="collection-info">
+          <h5>
+          Mural of Etnik in Via del Lavoro 3
+          </h5>
         
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
 
- <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/alice_pasquini.html"
-           subject="human_figure"
-           creator="Alice_Pasquini"
-           condition="visible"
-           theme="identity"
-           support="gate">
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work7.jpg" alt="item-7">
-      <div class="collection-info">
-        <h5>
-          Mural of Alice Pasquini in Via del Pratello
-        </h5>
+  <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/blu.html"
+            subject="city"
+            creator="Blu"
+            condition="destroyed"
+            theme="social_issue"
+            support="wall" >
+      <div class="image-overlay">
+        <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work12.jpg" alt="item=12">
+        <div class="collection-info">
+          <h5>
+            Mural of Blu in Via Fioravanti 24
+          </h5>
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
+  </div> <!-- Close .gallery-container -->
+  </div> <!-- Close .collection-container -->
 
- <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/nemo.html"
-           subject="human_figure"
-           creator="Nemo"
-           condition="visible"
-           theme="social_issue"
-           support="wall">
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work8.jpg" alt="item-8">
-      <div class="collection-info">
-        <h5>
-          Mural of Nemo in Via Orfeo
-        </h5>
-      </div>
-    </div>
-  </a>
+  <div class="site-footer">
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> <!-- License information: https://untree.co/license/ -->
+					</p>
+					<p>
+    				<strong>This website is a project developed for the <em>Semantic Digital Libraries</em> course, part of the <em>Digital Humanities and Digital Knowledge</em> degree program at the University of Bologna.</strong><br>
+    				<small>Academic Year 2024/2025</small>
+  					</p>
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</div>
 
- <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/dado_mambo.html"
-           subject="geometric_shapes"
-           creator="Dado Mambo"
-           condition="visible"
-           theme="environment"
-           support="wall">
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work9.jpg" alt="item-9">
-      <div class="collection-info">
-        <h5>
-          Mural of Dado e Mambo in Via Milazzo 14
-        </h5>
-      </div>
-    </div>
-  </a>
 
- <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/bastardilla.html"
-           subject="human_figure"
-           creator="Bastardilla"
-           condition="visible"
-           theme="social_issue"
-           support="wall">
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work10.jpg" alt="item-10">
-      <div class="collection-info">
-        <h5>
-          Mural of Bastardilla in Via Tolmino 9
-        </h5>
-      </div>
-    </div>
-  </a>
 
- <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/etnik.html"
-           subject="geometric_shapes"
-           creator="Etnik"
-           condition="visible"
-           theme="environment"
-           support="wall">
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work11_cut.jpg" alt="item-11">
-      <div class="collection-info">
-        <h5>
-         Mural of Etnik in Via del Lavoro 3
-        </h5>
-       
-      </div>
-    </div>
-  </a>
 
- <a class="collection-card" href="https://streetart-bo-project.github.io/semantic-library-street-art/website/blu.html"
-           subject="city"
-           creator="Blu"
-           condition="destroyed"
-           theme="social_issue"
-           support="wall" >
-    <div class="image-overlay">
-      <img src="https://streetart-bo-project.github.io/semantic-library-street-art/website/images/work12.jpg" alt="item=12">
-      <div class="collection-info">
-        <h5>
-          Mural of Blu in Via Fioravanti 24
-        </h5>
-      </div>
-    </div>
-  </a>
 
 <script>
   const filters = {
@@ -299,3 +372,4 @@
   // 初始加载时应用过滤（可选）
   applyFilters();
 </script>
+</body>
