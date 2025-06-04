@@ -85,53 +85,89 @@
 
 
 
-	<div class="div">
-		<div class="container">
-			<nav>
-				<h2>Index</h2>
-				<ol>
-					<li><a href="#introduction">Introduction</a></li>
-					<li>
+	<div class="div" style="padding: 10px 8vw 40px 8vw; margin: 16px 0 32px 0;"></div>
+	<div class="container">
+		<nav>
+			<h2>Index</h2>
+			<ol>
+				<li style="border-bottom: 1px solid #f8ea6f; padding: 2px 8px 2px 8px; margin-bottom: 2px;">
+					<a href="#introduction">Introduction</a>
+				</li>
+				<li style="border-bottom: 1px solid #7ff5eb; padding: 2px 8px 2px 8px; margin-bottom: 2px;">
 					<a href="#project-overview">Project overview</a>
 					<ol>
-						<li><a href="#project-objectives">Project objectives</a></li>
-						<li><a href="#why-bologna"> Why street art in Bologna</a></li>
+						<li>
+							<a href="#project-objectives">Project objectives</a>
+						</li>
+						<li>
+							<a href="#why-bologna">Why street art in Bologna</a>
+						</li>
 					</ol>
-					</li>
-					<li><a href="#artworks-metadata"> Artworks and Metadata</a></li>
-					<li>
+				</li>
+				<li style="border-bottom: 1px solid #ed93b2; padding: 2px 8px 2px 8px; margin-bottom: 2px;">
+					<a href="#artworks-metadata">Artworks and Metadata</a>
+				</li>
+				<li style="border-bottom: 1px solid #dc7aed; padding: 2px 8px 2px 8px; margin-bottom: 2px;">
 					<a href="#knowledge-modeling">Knowledge Organization and Modeling</a>
 					<ol>
-						<li><a href="#conceptual-map">Conceptual Map (Natural Language)</a></li>
-						<li><a href="#er-model">Entity-Relationship (E/R) Model</a></li>
-						<li><a href="#ontological-model">Ontological Conceptual Model</a></li>
+						<li>
+							<a href="#conceptual-map">Conceptual Map (Natural Language)</a>
+						</li>
+						<li>
+							<a href="#er-model">Entity-Relationship (E/R) Model</a>
+						</li>
+						<li>
+							<a href="#ontological-model">Ontological Conceptual Model</a>
+						</li>
 					</ol>
-					</li>
-					<li><a href="#rdf-serialization">Data Conversion and RDF Serialization</a></li>
-					<li><a href="#platform">The platform</a></li>
-					<li><a href="#tools">Tools used</a></li>
-					<li><a href="#conclusion">Conclusion</a></li>
-					<li><a href="#sitography">Bibliography and Sitography</a></li>
-				</ol>
-			</nav>
-		</div>
+				</li>
+				<li style="border-bottom: 1px solid #a5d6a7; padding: 2px 8px 2px 8px; margin-bottom: 2px;">
+					<a href="#rdf-serialization">Data Conversion and RDF Serialization</a>
+				</li>
+				<li style="border-bottom: 1px solid #ffb74d; padding: 2px 8px 2px 8px; margin-bottom: 2px;">
+					<a href="#platform">The platform</a>
+				</li>
+				<li style="border-bottom: 1px solid #ba68c8; padding: 2px 8px 2px 8px; margin-bottom: 2px;">
+					<a href="#tools">Tools used</a>
+				</li>
+				<li style="border-bottom: 1px solid #aed581; padding: 2px 8px 2px 8px; margin-bottom: 2px;">
+					<a href="#conclusion">Conclusion</a>
+				</li>
+				<li style="border-bottom: 1px solid #e57373; padding: 2px 8px 2px 8px; margin-bottom: 2px;">
+					<a href="#sitography">9. Bibliography and Sitography</a>
+				</li>
+			</ol>
+		</nav>
+	</div>
 	</div>
 
+	<style>
+		main h2 {
+			font-size: 1.5rem;
+			margin-top: 1.2em;
+			margin-bottom: 0.8em;
+		}
+		main h3 {
+			font-size: 1.2rem;
+			margin-top: 1em;
+			margin-bottom: 0.6em;
+		}
+	</style>
 
-	<main>
+	<main style="padding: 40px 8vw; margin: 32px 0; text-align: justify;">
 	<!--INTRO-->
-		<div id="introduction">
-      		<h2>1. Introduction</h2>
-      		<p>
+		<div id="introduction" style="margin-bottom: 40px;">
+			<h2 style="background-color: #fbfce4; padding: 8px 16px;">1. Introduction</h2>
+			<p>
 				Urban Ink Archive is a digital project aimed at <b>documenting, preserving, and semantically exploring</b> urban graffiti in the city of Bologna. It focuses on creating a <b>digital catalogue</b> of street art using semantic web technologies and cultural heritage ontologies. <br><br>
 				Although the project initially concentrates on murals located in Bologna, its scope could be expanded in future developments to include street art from other contexts. The use of ontologies for conceptual modelling and knowledge graphs for data interconnection enhances adherence to FAIR principles and reproducibility, enabling machine-actionable Linked Open Data (LOD). <br><br>
 				The platform supports an accessible web interface, allowing users to <b>filter artworks </b> based on conceptual relationships and view them on an <b>interactive map</b>. This makes the project useful for both experts and non-experts, enhancing the visibility and understanding of street art as a form of contemporary cultural expression.
-      		</p>
-    	</div>
+			</p>
+		</div>
 	<!--PROJECT OVERVIEW-->
-		<div id="project-overview">
-	  		<h2>2. Project Overview</h2>
-			<div id="project-objectives">
+		<div id="project-overview" style="margin-bottom: 40px;">
+			<h2 style="background-color: #e5fbfd; padding: 8px 16px;">2. Project Overview</h2>
+			<div id="project-objectives" style="margin-bottom: 22px;">
 				<h3>Project Objectives</h3>
 				<p> The main goals of Urban Ink Archive are:
 					<ul>
@@ -162,10 +198,10 @@
 
 			</div>
 		</div>
-	
+
 	<!--ARTWORKS AND METADATA-->
-		<div id="artworks-metadata">
-			<h2>3. Artworks and Metadata</h2>
+		<div id="artworks-metadata" style="margin-bottom: 40px;">
+			<h2 style="background-color: #f1dadaf9; padding: 8px 16px;">3. Artworks and Metadata</h2>
 			<p>
 				We curated a selection of murals and defined <b>essential metadata</b> for each artwork, including:
 				<ul>
@@ -190,9 +226,9 @@
 		</div>
 
 	<!--KNOWLEDGE ORGANIZAION AND MODELING-->
-		<div id="knowledge-modeling">
-			<h2>4. Knowledge Organization and Modelling</h2>
-			<div id="conceptual-map">
+		<div id="knowledge-modeling" style="margin-bottom: 40px;">
+			<h2 style="background-color: #f2eaf7; padding: 8px 16px;">4. Knowledge Organization and Modelling</h2>
+			<div id="conceptual-map" style="margin-bottom: 22px;">
 				<h3>Step 1: Conceptual Map (Natural Language)</h3>
 				<p>
 					We began by visualizing the data as conceptual map in <b>natural language</b>, representing real metadata of the artworks such as authors, places, and subjects. A color-coded system was used to distinguish the metadata:
@@ -230,7 +266,7 @@
 					</ul>
 				</p>
 			</div>
-			<div id="er-model">
+			<div id="er-model" style="margin-bottom: 22px;">
 				<h3>Step 2: Entity-Relationship (E/R) Model</h3>
 				<p>
 					We translated the conceptual maps into an E/R model, providing a formal schema that defines the entities (e.g., “Artwork”, “Place”, “Subject”) and the relationships between them. This served as a bridge toward semantic modelling.
@@ -269,16 +305,16 @@
 		</div>
 
 	<!--DATA CONVERSION AND RDF SERIALIZATION-->
-		<div id="rdf-serialization">
-			<h2>5. Data Conversion and RDF Serialization</h2>
+		<div id="rdf-serialization" style="margin-bottom: 40px;">
+			<h2 style="background-color: #e2f7dc; padding: 8px 16px;">5. Data Conversion and RDF Serialization</h2>
 			<p>
 				We compiled all mural metadata in a <b>CSV file</b>, which was then transformed into <b>RDF triples</b> using a <b>Python script</b>. This script extracts subject–predicate–object triples from the CSV and populates a graph, which is finally serialized into a <b>Turtle (.ttl) file</b>.
 			</p>
 		</div>
 
 	<!--THE PLATFORM-->
-		<div id="platform">
-			<h2>6. The Platform</h2>
+		<div id="platform" style="margin-bottom: 40px;">
+			<h2 style="background-color: #fdf5e4; padding: 8px 16px;">6. The Platform</h2>
 			<p>
 				The Urban Ink Archive website acts as both a visual gallery and a semantic interface. <br>
 				It offers a browsable collection of murals, that can be semantically filtered. An interactive digital map for geolocating murals and the access to structured data based on ontologies. <br>
@@ -289,8 +325,8 @@
 		</div>	
 
 	<!--TOOLS USED-->
-		<div id="tools">
-			<h2>7. Tools Used</h2>
+		<div id="tools" style="margin-bottom: 40px;">
+			<h2 style="background-color: #f9eaff; padding: 8px 16px;">7. Tools Used</h2>
 			<p>
 				<ul>
 					<li>
@@ -305,34 +341,35 @@
 
 
 	<!--CONCLUSION-->
-		<div id="conclusion">
-			<h2>8. Conclusion</h2>
+		<div id="conclusion" style="margin-bottom: 40px;">
+			<h2 style="background-color: #e2f4e0; padding: 8px 16px;">8. Conclusion</h2>
 			<p>
 				Urban Ink Archive is a cultural heritage initiative. By combining semantic technologies with an accessible digital platform, it brings visibility to street art and contributes to its long-term preservation. Through ontologies and structured data, we offer new ways of engaging with urban visual culture, promoting scholarly exploration and public appreciation.
 			</p>
 		</div>
 	<!--SITOGRAPHY-->
-		<div id="sitography">
-			<h2>9. Bibliography and Sitography</h2>
+		<div id="sitography" style="margin-bottom: 40px;">
+			<h2 style="background-color: #f6e5e5; padding: 8px 16px;">9. Bibliography and Sitography</h2>
 			<p>
 				<ul>
-					<li><a href="https://www.andreco.org/portfolio/philosophical-tree/?lang=it" target="_blank">Andreco, <em>Philosophical Tree</em></a></li>
-					<li><a href="https://www.pressreader.com/italy/corriere-di-bologna/20200723/281500753569708" target="_blank">Corriere di Bologna, “La nuova opera di Ericailcane e Bastardilla al Pratello”</a></li>
-					<li><a href="https://zero.eu/it/news/la-nuova-opera-di-ericailcane-e-bastardilla-al-pratello/" target="_blank">Zero.eu, <em>La nuova opera di Ericailcane e Bastardilla al Pratello</em></a></li>
-					<li><a href="https://www.art-vibes.com/street-art/collettivo-fx-le-lacrime-della-giustizia-dumbo-bologna/" target="_blank">Art Vibes, <em>Collettivo FX – Le lacrime della giustizia, DumBO, Bologna</em></a></li>
-					<li><a href="https://www.orticanoodles.com/2017_irma_bandiera_cheap_festival/" target="_blank">Orticanoodles, <em>Irma Bandiera – Cheap Festival</em></a></li>
-					<li><a href="https://www.bibliotecasalaborsa.it/bolognaonline/events/il_murale_500_anni_dalla_conquista_dellamerica_di_luiz_gutierrez" target="_blank">Biblioteca Salaborsa, <em>Il murale "500 anni dalla conquista dell’America" di Luiz Gutiérrez</em></a></li>
-					<li><a href="https://www.facebook.com/story.php?story_fbid=1193419727513777&id=100049901513529" target="_blank">Facebook – <em>Luiz Gutiérrez – Murale 500 anni dalla conquista dell’America</em></a></li>
-					<li><a href="https://www.alicepasquini.com/portfolio/bologna-it" target="_blank">Alice Pasquini – Portfolio Bologna</a></li>
-					<li><a href="https://ilgorgo.com/nemos-new-mural-labas-bologna/" target="_blank">Il Gorgo – <em>Nemo’s new mural @ Làbas Bologna</em></a></li>
-					<li><a href="https://www.flashgiovani.it/node/165" target="_blank">Flashgiovani Bologna</a></li>
-					<li><a href="https://ilgorgo.com/bastardilla-new-mural-for-frontier-in-bologna/" target="_blank">Il Gorgo – <em>Bastardilla: new mural for Frontier in Bologna</em></a></li>
-					<li><a href="https://www.bolognatoday.it/cronaca/murales-cisl-via-milazzo-dado-mambo.html" target="_blank">BolognaToday – <em>Murales Cisl via Milazzo, Dado e Mambo</em></a></li>
-					<li><a href="https://www.internazionale.it/weekend/paola-soriga/2015/02/22/amp/mi-sono-innamorata-di-blu-lo-street-artist-inafferrabile" target="_blank">Internazionale, <em>Mi sono innamorata di Blu, lo street artist inafferrabile</em></a></li>
+					<li><a href="https://www.andreco.org/portfolio/philosophical-tree/?lang=it" target="_blank" style="color: #e57373;">Andreco, <em>Philosophical Tree</em></a></li>
+					<li><a href="https://www.pressreader.com/italy/corriere-di-bologna/20200723/281500753569708" target="_blank" style="color: #64b5f6;">Corriere di Bologna, “La nuova opera di Ericailcane e Bastardilla al Pratello”</a></li>
+					<li><a href="https://zero.eu/it/news/la-nuova-opera-di-ericailcane-e-bastardilla-al-pratello/" target="_blank" style="color: #81c784;">Zero.eu, <em>La nuova opera di Ericailcane e Bastardilla al Pratello</em></a></li>
+					<li><a href="https://www.art-vibes.com/street-art/collettivo-fx-le-lacrime-della-giustizia-dumbo-bologna/" target="_blank" style="color: #ffd54f;">Art Vibes, <em>Collettivo FX – Le lacrime della giustizia, DumBO, Bologna</em></a></li>
+					<li><a href="https://www.orticanoodles.com/2017_irma_bandiera_cheap_festival/" target="_blank" style="color: #ba68c8;">Orticanoodles, <em>Irma Bandiera – Cheap Festival</em></a></li>
+					<li><a href="https://www.bibliotecasalaborsa.it/bolognaonline/events/il_murale_500_anni_dalla_conquista_dellamerica_di_luiz_gutierrez" target="_blank" style="color: #4db6ac;">Biblioteca Salaborsa, <em>Il murale "500 anni dalla conquista dell’America" di Luiz Gutiérrez</em></a></li>
+					<li><a href="https://www.facebook.com/story.php?story_fbid=1193419727513777&id=100049901513529" target="_blank" style="color: #f06292;">Facebook – <em>Luiz Gutiérrez – Murale 500 anni dalla conquista dell’America</em></a></li>
+					<li><a href="https://www.alicepasquini.com/portfolio/bologna-it" target="_blank" style="color: #ff8a65;">Alice Pasquini – Portfolio Bologna</a></li>
+					<li><a href="https://ilgorgo.com/nemos-new-mural-labas-bologna/" target="_blank" style="color: #7986cb;">Il Gorgo – <em>Nemo’s new mural @ Làbas Bologna</em></a></li>
+					<li><a href="https://www.flashgiovani.it/node/165" target="_blank" style="color: #aed581;">Flashgiovani Bologna</a></li>
+					<li><a href="https://ilgorgo.com/bastardilla-new-mural-for-frontier-in-bologna/" target="_blank" style="color: #ffb74d;">Il Gorgo – <em>Bastardilla: new mural for Frontier in Bologna</em></a></li>
+					<li><a href="https://www.bolognatoday.it/cronaca/murales-cisl-via-milazzo-dado-mambo.html" target="_blank" style="color: #4fc3f7;">BolognaToday – <em>Murales Cisl via Milazzo, Dado e Mambo</em></a></li>
+					<li><a href="https://www.internazionale.it/weekend/paola-soriga/2015/02/22/amp/mi-sono-innamorata-di-blu-lo-street-artist-inafferrabile" target="_blank" style="color: #a1887f;">Internazionale, <em>Mi sono innamorata di Blu, lo street artist inafferrabile</em></a></li>
 				</ul>
 			</p>
 		</div>
 	</main>
+	
 
 	<div class="div div-contact m-md-5 px-md-5 mt-5">
 		<div class="container">
