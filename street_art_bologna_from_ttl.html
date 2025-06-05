@@ -103,8 +103,6 @@
         
     <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
 
     <title>Urban Ink Archive</title>
 
@@ -912,36 +910,6 @@
             feature_group_b03f9d9d5ed9b47b303896e53750f67a.addTo(map_4160dc9f955a53d92b3503fdd1fe536d);
         
     
-            var feature_group_b03f9d9d5ed9b47b303896e53750f67asearchControl = new L.Control.Search({
-                layer: feature_group_b03f9d9d5ed9b47b303896e53750f67a,
-                
-                propertyName: 'title',
-                
-                collapsed: false,
-                textPlaceholder: 'Search mural title...',
-                position:'topleft',
-            
-                initial: false,
-                
-                zoom: 16,
-                
-                hideMarkerOnCollapse: true
-            
-                });
-                feature_group_b03f9d9d5ed9b47b303896e53750f67asearchControl.on('search:locationfound', function(e) {
-                    feature_group_b03f9d9d5ed9b47b303896e53750f67a.setStyle(function(feature){
-                        return feature.properties.style
-                    })
-                    
-                    if(e.layer._popup)
-                        e.layer.openPopup();
-                })
-                feature_group_b03f9d9d5ed9b47b303896e53750f67asearchControl.on('search:collapsed', function(e) {
-                        feature_group_b03f9d9d5ed9b47b303896e53750f67a.setStyle(function(feature){
-                            return feature.properties.style
-                    });
-                });
-            map_4160dc9f955a53d92b3503fdd1fe536d.addControl( feature_group_b03f9d9d5ed9b47b303896e53750f67asearchControl );
 
         
 </script>

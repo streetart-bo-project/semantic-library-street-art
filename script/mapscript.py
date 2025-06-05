@@ -1,6 +1,5 @@
 import folium
 from rdflib import Graph, Namespace, RDF, RDFS
-from folium.plugins import Search
 import re
 from folium.plugins import Fullscreen
 
@@ -171,14 +170,6 @@ for item in data:
     marker.add_to(marker_group)
     marker_lookup[item['title']] = marker
 
-# Aggiungi la ricerca
-Search(
-    layer=marker_group,
-    search_label='title',
-    search_zoom=16,
-    placeholder='Search mural title...',
-    collapsed=False
-).add_to(m)
 
 
 m.save("street_art_bologna_from_ttl.html")
