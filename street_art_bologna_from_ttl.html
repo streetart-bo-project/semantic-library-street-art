@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
 
     <link rel="stylesheet" href="website/fonts/icomoon/style.css">
-	<link rel="stylesheet" href="website/fonts/feather/style.css">
+	  <link rel="stylesheet" href="website/fonts/feather/style.css">
 
     <meta name="description" content="" />
 	<meta name="keywords" content="bootstrap, bootstrap5" />
@@ -25,7 +25,6 @@
 	<link rel="stylesheet" href="website/css/tiny-slider.css">
 	<link rel="stylesheet" href="website/css/aos.css">
 	<link rel="stylesheet" href="website/css/glightbox.min.css">
-	<link rel="stylesheet" href="website/css/style.css">
 	<link rel="stylesheet" href="website/css/img.css">
 	<link rel="stylesheet" href="website/css/css_item.css">
     <link rel="shortcut icon" href="website/favicon.png">
@@ -100,6 +99,7 @@
                 L_DISABLE_3D = false;
             </script>
 
+
         
     <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
@@ -108,24 +108,33 @@
 
     <title>Urban Ink Archive</title>
 
+  <link rel="stylesheet" href="website/css/style.css">
+  <style>
+    .heading-2 {
+      font-size: 90px;
+      font-weight: 700;
+      line-height: 1;
+      font-family: 'Playfair Display', serif; }
+      @media (max-width: 991.98px) {
+        .heading-2 {
+          font-size: 60px; } }
+      @media (max-width: 991.98px) {
+        .heading-2 {
+          font-size: 40px; } }
+  </style>
+
+  <link rel="stylesheet" href="website/css/style.css">
 
 </head>
 
 
 <body>
     
-    <div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
-
+<!-- NAVBAR -->
 	<nav class="site-nav">
 		<div class="container">
 			<div class="site-navigation">
+				
 
 				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
 					<li class="active"><a href="index.html">Home</a></li>
@@ -136,88 +145,101 @@
 				</ul>
 
 				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
-					<span></span>
+				
 				</a>
 			</div>
 		</div>
 	</nav>
-    
+<!-- END NAVBAR -->
 
-<div class="container-fluid my-5">
-  <div class="row" style="height: 80vh;">
+<!--IMG HOME-->
+	<div class="hero v-h-full overlay"
+     style="background: url('website/images/prova_sfondo_SDL.jpg') center center/cover no-repeat; min-height: 60vh; width: 100vw; position: relative; margin-left: calc(-50vw + 50%);">
+    <div class="container">
+			<div class="row align-items-center v-h-full">
+
+				<div class="col-lg-7 col-xxl-6 mx-auto text-center">
+          <h1 class="heading-2 text-white mb-3" style="font-size: 110px;">The Map</h1>
+          <p data-aos-delay="200" class="text-white lead mb-4" style="font-size: 2rem;">Browse the interactive map to discover the locations of street art pieces across the city</p>
+				</div>
+			</div>
+		</div>
+  </div>
+<!-- END IMG HOME -->
+
     
-    <!-- Colonna Mappa -->
-    <div class="col-lg-8 mb-4 mb-lg-0">
-      <div id="map_4160dc9f955a53d92b3503fdd1fe536d" style="height: 100%; width: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.08); background: #f8f9fa;"></div>
+  <!-- Spostato il contenuto più in basso nella pagina -->
+  <div style="height: 60px;"></div>
+  <div class="container">
+    <div class="container-fluid my-5">
+      <div class="row" style="height: 80vh;">
+        
+        <!-- Colonna Mappa -->
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <div id="map_4160dc9f955a53d92b3503fdd1fe536d" style="height: 100%; width: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.08); background: #f8f9fa;"></div>
+        </div>
+
+        <!-- Colonna Lista Opere -->
+        <div class="col-lg-4">
+          <div class="border rounded p-3 scroll-list work-list">
+            <h4 class="mb-3">Artworks List</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)">Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)</strong><br>
+                <a href="website/andreco.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Alice Pasquini in Via del Pratello">Mural of Alice Pasquini in Via del Pratello</strong><br>        
+                <a href="website/alice_pasquini.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Bastardilla in Via Tolmino 7">Mural of Bastardilla in Via Tolmino 7</strong><br>
+                <a href="website/bastardilla.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Blu in Via Fioravanti">Mural of Blu in Via Fioravanti</strong><br>
+                <a href="website/blu.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Collettivo FX in Dumbo">Mural of Collettivo FX in Dumbo</strong><br>
+                <a href="website/collettivoFX.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Dado e Mambo in Via Milazzo">Mural of Dado e Mambo in Via Milazzo</strong><br>
+                <a href="website/dado_mambo.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Ericailcane and Bastardilla in Via del Pratello">Mural of Ericailcane and Bastardilla in Via del Pratello</strong><br>
+                <a href="website/Ericailcane_Bastardilla.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Etnik in Via del Lavoro 3">Mural of Etnik in Via del Lavoro 3</strong><br>
+                <a href="website/etnik.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Honet in via del Lavoro 18">Mural of Honet in via del Lavoro 18</strong><br>
+                <a href="website/honet.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Luis Gutierrez in Via Zamboni">Mural of Luis Gutierrez in Via Zamboni</strong><br>
+                <a href="website/luis_gutierrez.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Nemo in Via Orfeo">Mural of Nemo in Via Orfeo</strong><br>
+                <a href="website/nemo.html">View Details</a>
+              </li>
+              <li class="list-group-item">
+                <strong class="work-title" data-title="Mural of Orticanoodles in via Turati 84 ">Mural of Orticanoodles in via Turati 84 </strong><br>
+                <a href="website/orticanoodles.html">View Details</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-<!-- Colonna Lista Opere -->
-<div class="col-lg-4">
-  <div class="border rounded p-3 scroll-list work-list">
-    <h4 class="mb-3">Artworks List</h4>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)">Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)</strong><br>
-        <a href="website/andreco.html">View Details</a>
-      </li>
-      <li class="list-group-item">
-      <strong class="work-title" data-title="Mural of Alice Pasquini in Via del Pratello">Mural of Alice Pasquini in Via del Pratello</strong><br>        
-      <a href="website/alice_pasquini.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Bastardilla in Via Tolmino 7">Mural of Bastardilla in Via Tolmino 7</strong><br>
-        <a href="website/bastardilla.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Blu in Via Fioravanti">Mural of Blu in Via Fioravanti</strong><br>
-        <a href="website/blu.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Collettivo FX in Dumbo">Mural of Collettivo FX in Dumbo</strong><br>
-        <a href="website/collettivoFX.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Dado e Mambo in Via Milazzo">Mural of Dado e Mambo in Via Milazzo</strong><br>
-        <a href="website/dado_mambo.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Ericailcane and Bastardilla in Via del Pratello">Mural of Ericailcane and Bastardilla in Via del Pratello</strong><br>
-        <a href="website/Ericailcane_Bastardilla.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Etnik in Via del Lavoro 3">Mural of Etnik in Via del Lavoro 3</strong><br>
-        <a href="website/etnik.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Honet in via del Lavoro 18">Mural of Honet in via del Lavoro 18</strong><br>
-        <a href="website/honet.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Luis Gutierrez in Via Zamboni">Mural of Luis Gutierrez in Via Zamboni</strong><br>
-        <a href="website/luis_gutierrez.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Nemo in Via Orfeo">Mural of Nemo in Via Orfeo</strong><br>
-        <a href="website/nemo.html">View Details</a>
-      </li>
-       <li class="list-group-item">
-        <strong class="work-title" data-title="Mural of Orticanoodles in via Turati 84 ">Mural of Orticanoodles in via Turati 84 </strong><br>
-        <a href="website/orticanoodles.html">View Details</a>
-      </li>
-
-    </ul>
   </div>
-</div>
 
-
-
-  </div>
-</div>
-
-
-
-
-    <div class="site-footer">
+  <div class="site-footer">
 		<div class="container">
 			<div class="row mt-5">
 				<div class="col-12 text-center">
