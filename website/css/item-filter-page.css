@@ -1,6 +1,4 @@
-body {
-  padding-top: 80px; 
-}
+
 
 .filters {
   display: flex;
@@ -140,3 +138,22 @@ body {
     grid-template-columns: 1fr; /* 小屏1列 */
   }
 }
+
+
+.site-nav {
+  background: transparent !important;
+  box-shadow: none !important;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+}
+
+.site-nav,
+.site-nav a,
+.site-nav .burger span {
+  color: #fff !important;
+}
+
+
