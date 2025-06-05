@@ -29,13 +29,15 @@
 	<link rel="stylesheet" href="website/css/img.css">
 	<link rel="stylesheet" href="website/css/css_item.css">
     <link rel="shortcut icon" href="website/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
                 html, body {
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                     margin: 0;
                     padding: 0;
                 }
@@ -55,7 +57,42 @@
                     box-shadow: 0 2px 16px rgba(0,0,0,0.08);
                     background: #f8f9fa;
                 }
+                .scroll-list {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.work-list, .work-list h4 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.3rem; 
+  line-height: 1.5;
+}
+
+.work-list .list-group-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+
+.work-list .list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.work-list a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.work-list a:hover {
+  text-decoration: underline;
+}
+
+
                 .leaflet-container { font-size: 1rem; }
+                
             </style>
 
             <script>
@@ -70,6 +107,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
 
     <title>Urban Ink Archive</title>
+
 
 </head>
 
@@ -104,7 +142,79 @@
 		</div>
 	</nav>
     
-    <div class="folium-map" id="map_4160dc9f955a53d92b3503fdd1fe536d" ></div>
+
+<div class="container-fluid my-5">
+  <div class="row" style="height: 80vh;">
+    
+    <!-- Colonna Mappa -->
+    <div class="col-lg-8 mb-4 mb-lg-0">
+      <div id="map_4160dc9f955a53d92b3503fdd1fe536d" style="height: 100%; width: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.08); background: #f8f9fa;"></div>
+    </div>
+
+<!-- Colonna Lista Opere -->
+<div class="col-lg-4">
+  <div class="border rounded p-3 scroll-list work-list">
+    <h4 class="mb-3">Artworks List</h4>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)">Mural of ANDRECO in Via dello Scalo 32 (Philosophical Tree)</strong><br>
+        <a href="website/andreco.html">View Details</a>
+      </li>
+      <li class="list-group-item">
+      <strong class="work-title" data-title="Mural of Alice Pasquini in Via del Pratello">Mural of Alice Pasquini in Via del Pratello</strong><br>        
+      <a href="website/alice_pasquini.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Bastardilla in Via Tolmino 7">Mural of Bastardilla in Via Tolmino 7</strong><br>
+        <a href="website/bastardilla.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Blu in Via Fioravanti">Mural of Blu in Via Fioravanti</strong><br>
+        <a href="website/blu.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Collettivo FX in Dumbo">Mural of Collettivo FX in Dumbo</strong><br>
+        <a href="website/collettivoFX.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Dado e Mambo in Via Milazzo">Mural of Dado e Mambo in Via Milazzo</strong><br>
+        <a href="website/dado_mambo.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Ericailcane and Bastardilla in Via del Pratello">Mural of Ericailcane and Bastardilla in Via del Pratello</strong><br>
+        <a href="website/Ericailcane_Bastardilla.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Etnik in Via del Lavoro 3">Mural of Etnik in Via del Lavoro 3</strong><br>
+        <a href="website/etnik.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Honet in via del Lavoro 18">Mural of Honet in via del Lavoro 18</strong><br>
+        <a href="website/honet.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Luis Gutierrez in Via Zamboni">Mural of Luis Gutierrez in Via Zamboni</strong><br>
+        <a href="website/luis_gutierrez.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Nemo in Via Orfeo">Mural of Nemo in Via Orfeo</strong><br>
+        <a href="website/nemo.html">View Details</a>
+      </li>
+       <li class="list-group-item">
+        <strong class="work-title" data-title="Mural of Orticanoodles in via Turati 84 ">Mural of Orticanoodles in via Turati 84 </strong><br>
+        <a href="website/orticanoodles.html">View Details</a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+
 
 
     <div class="site-footer">
@@ -121,7 +231,26 @@
 			</div>
 		</div> <!-- /.container -->
 	</div>
-        
+  
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.work-title').forEach(el => {
+    el.style.cursor = 'pointer';
+    el.addEventListener('click', () => {
+      const title = el.dataset.title;
+      const marker = window.markersByTitle?.[title];
+      if (marker) {
+        marker.openPopup();
+      } else {
+        console.warn("Marker not found for title:", title);
+      }
+    });
+  });
+});
+
+</script>
+
+
 </body>
 
 
